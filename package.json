@@ -12,11 +12,11 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
- "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start"
-},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
