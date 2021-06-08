@@ -1,10 +1,10 @@
 import React from "react";
-import Userflow from "./Userflow";
 
+import Interactable from "../Comoponents/Interactable";
 export const Home = () => {
   return (
     <div>
-      <Userflow />
+      <Interactable />
     </div>
   );
 };
