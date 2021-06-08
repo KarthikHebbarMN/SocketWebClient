@@ -11,32 +11,27 @@ function Tab() {
 
   return (
     <div className={styles.tab_container}>
-      <div className={styles.blo_tabs}>
+      <div className={styles.bloc_tabs}>
         <button
           className={
-            toggleState === 1 ? "{styles.tabs active_tabs}" : "{styles.tabs}"
+            toggleState === 1 ? styles.active_tabs : styles.tabs
+            // toggleState === 1 ? "styles.tabs styles.active_tabs" : "styles.tabs"
           }
           onClick={() => toggleTab(1)}>
           Floor
         </button>
         <button
-          className={
-            toggleState === 2 ? "{styles.tabs active_tabs}" : "{styles.tabs}"
-          }
+          className={toggleState === 2 ? styles.active_tabs : styles.tabs}
           onClick={() => toggleTab(2)}>
           Table
         </button>
         <button
-          className={
-            toggleState === 3 ? "{styles.tabs active_tabs}" : "{styles.tabs}"
-          }
+          className={toggleState === 3 ? styles.active_tabs : styles.tabs}
           onClick={() => toggleTab(3)}>
           Chair
         </button>
         <button
-          className={
-            toggleState === 4 ? "{styles.tabs active_tabs}" : "{styles.tabs}"
-          }
+          className={toggleState === 4 ? styles.active_tabs : styles.tabs}
           onClick={() => toggleTab(4)}>
           TV
         </button>
