@@ -1,6 +1,6 @@
 import React from "react";
 
-import Interactable from "../Comoponents/Interactable";
+import Interactable from "../Components/Interactable";
 export const Home = () => {
   return (
     <div>
