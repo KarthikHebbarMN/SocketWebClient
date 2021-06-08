@@ -13,10 +13,7 @@ function Tab() {
     <div className={styles.tab_container}>
       <div className={styles.bloc_tabs}>
         <button
-          className={
-            toggleState === 1 ? styles.active_tabs : styles.tabs
-            // toggleState === 1 ? "styles.tabs styles.active_tabs" : "styles.tabs"
-          }
+          className={toggleState === 1 ? styles.active_tabs : styles.tabs}
           onClick={() => toggleTab(1)}>
           Floor
         </button>
@@ -40,9 +37,7 @@ function Tab() {
       <div className={styles.content_tabs}>
         <div
           className={
-            toggleState === 1
-              ? "{styles.content  styles.active_content}"
-              : "{styles.content}"
+            toggleState === 1 ? styles.active_content : styles.content
           }>
           <div className={styles.list_main}>
             <div className={styles.list}>
@@ -68,16 +63,37 @@ function Tab() {
 
         <div
           className={
-            toggleState === 2
-              ? "{styles.content  styles.active_content}"
-              : "{styles.content}"
-          }></div>
+            toggleState === 2 ? styles.active_content : styles.content
+          }>
+          <div className={styles.list_main}>
+            <div className={styles.list}>
+              <img
+                className={styles.item_img}
+                src='https://images.unsplash.com/photo-1611486212355-d276af4581c0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dGFibGUlMjBkZXNpZ258ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'
+                alt='img'></img>
+            </div>
+            <div className={styles.list}>
+              <img
+                className={styles.item_img}
+                src='https://images.unsplash.com/photo-1577017050748-389f0021d860?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHRhYmxlJTIwZGVzaWdufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'
+                alt='img'></img>
+            </div>
+            <div className={styles.list}>
+              <img
+                className={styles.item_img}
+                src='https://images.unsplash.com/photo-1601760561233-ce085e1e4a53?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fHRhYmxlJTIwZGVzaWdufGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60'
+                alt='img'></img>
+            </div>
+          </div>
+        </div>
 
         <div
           className={
-            toggleState === 3
-              ? "{styles.content  styles.active_content}"
-              : "{styles.content}"
+            toggleState === 3 ? styles.active_content : styles.content
+          }></div>
+        <div
+          className={
+            toggleState === 4 ? styles.active_content : styles.content
           }></div>
       </div>
     </div>

@@ -1,7 +1,7 @@
 // import React from "./react";
 import styles from "./styles.module.css";
 import Tab from "./Tab";
-// import List from "./List";
+
 const Interactable = () => {
   return (
     <>
@@ -12,10 +12,8 @@ const Interactable = () => {
               <h1>Get Personalised</h1>
             </div>
             <div className={styles.tab}>
-              {/* <h1>test</h1> */}
               <Tab />
             </div>
-            {/* <List /> */}
           </div>
           <div className={styles.right_div}>
             {/* <Img/> */}
