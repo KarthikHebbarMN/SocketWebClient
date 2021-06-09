@@ -1,9 +1,10 @@
 import React from 'react';
+import Progress from '../Components/Userflow/progress'
 
 export const Home = ()=> {
  return(
-     <div>HOME</div>
- );
+  <Progress />
+  );
 
 }
 

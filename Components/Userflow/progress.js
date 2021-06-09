@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '../pages/styles.module.css'
 import { makeStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
@@ -51,7 +50,7 @@ function getStepContent(step) {
 }
 
 
-export default function App() {
+export default function Progress() {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
