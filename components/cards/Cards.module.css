@@ -1,0 +1,101 @@
+.heading h1 {
+  position: absolute;
+  width: 721px;
+  height: 102px;
+  left: 359px;
+  top: 900px;
+
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 111.9%;
+  text-align: center;
+}
+
+.card {
+  background: #fffaed;
+  position: absolute;
+  width: 314px;
+  height: 318px;
+  top: 1100px;
+  left: 203px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.card2 {
+  background: #fffaed;
+  position: absolute;
+  width: 314px;
+  height: 318px;
+  top: 1100px;
+  left: 563px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card3 {
+  background: #fffaed;
+  position: absolute;
+  width: 314px;
+  height: 318px;
+  top: 1100px;
+  left: 923px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card3:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.container h4 {
+  position: absolute;
+  width: 164px;
+  height: 26px;
+  left: 20px;
+  top: 40px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.cardp {
+  position: absolute;
+  width: 275px;
+  height: 85px;
+  left: 20px;
+  top: 100px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.container a {
+  position: absolute;
+  width: 350px;
+  height: 85px;
+  left: 20px;
+  top: 250px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+}

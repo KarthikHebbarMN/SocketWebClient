@@ -1,0 +1,124 @@
+.body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.navbar {
+  display: flex;
+  padding: 40px 120px;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  margin-top: -15px;
+}
+.navlogo {
+  margin-top: -25px;
+}
+.navlinks {
+  flex: 1;
+  width: 100%;
+}
+
+.navlinks ul {
+  margin-left: 255px;
+  display: inline;
+}
+
+.navlinks ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 25px;
+}
+
+.navlinks ul a {
+  height: 17px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.navlinks ul li::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: yellow;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+.navlinks ul li:hover::after {
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 0;
+  background: yellow;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navlinks .btn {
+  float: right;
+}
+
+.signin {
+  margin-left: 150px;
+}
+.signup {
+  margin-left: 10px;
+}
+.background {
+  position: absolute;
+  width: 1209px;
+  height: 748px;
+  left: 80px;
+  top: 88px;
+  background: url("/images/Rectangle137.png") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.divtext {
+  margin: 192px 591px 446px 127px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 91.9%;
+  color: #202020;
+}
+
+.divptext {
+  position: absolute;
+  width: 539px;
+  height: 96px;
+  left: 132px;
+  top: 300px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.searchbar {
+  position: absolute;
+  width: 539px;
+  height: 96px;
+  left: 132px;
+  top: 400px;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
