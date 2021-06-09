@@ -83,14 +83,15 @@ export const Items = () => {
       <div className={styles.banner}>
         <div className={styles.innerbanner}>
           <div className={styles.searchbarbanner}>
-            <form>
+            <div className={styles.searchbar}>
               <input
+                className={styles.searchtext}
                 type="text"
                 placeholder="Type your email for this"
                 name="search"
               />
-              <button type="submit">Click Now</button>
-            </form>
+              <a className={styles.searchbtn} href="#"></a>
+            </div>
           </div>
         </div>
       </div>

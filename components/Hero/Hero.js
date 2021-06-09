@@ -48,14 +48,15 @@ export const Hero = () => {
           ullamcorper interdum elementum. Et adipiscing ac a faucibus neque,
           pretium, nisl.
         </p>
-        <form className={styles.searchbar}>
+        <div className={styles.searchbar}>
           <input
+            className={styles.searchtext}
             type="text"
             placeholder="Type your email for this"
             name="search"
           />
-          <button type="submit">Click Now</button>
-        </form>
+          <a className={styles.searchbtn} href="#"></a>
+        </div>
       </div>
     </>
   );

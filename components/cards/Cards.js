@@ -10,7 +10,7 @@ export const Cards = () => {
           <img alt="Avatar" />
           <div className={styles.container}>
             <h4>
-              <b className={styles.bheading}>Send us inspiration</b>
+              <h5 className={styles.bheading}>Send us inspiration</h5>
             </h4>
             <p className={styles.cardp}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
@@ -25,7 +25,7 @@ export const Cards = () => {
           <img alt="Avatar" />
           <div className={styles.container}>
             <h4>
-              <b className={styles.bheading}>Send us inspiration</b>
+              <h5 className={styles.bheading}>Send us inspiration</h5>
             </h4>
             <p className={styles.cardp}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
@@ -40,7 +40,7 @@ export const Cards = () => {
           <img alt="Avatar" />
           <div className={styles.container}>
             <h4>
-              <b className={styles.bheading}>Send us inspiration</b>
+              <h5 className={styles.bheading}>Send us inspiration</h5>
             </h4>
             <p className={styles.cardp}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa
