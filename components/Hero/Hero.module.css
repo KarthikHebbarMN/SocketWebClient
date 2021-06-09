@@ -17,7 +17,7 @@
   margin-top: -25px;
 }
 .navlinks {
-  flex: 1;
+  /* flex: 1; */
   width: 100%;
 }
 
@@ -161,4 +161,25 @@
   font-size: 16px;
   transition: 0.4s;
   line-height: 50px;
+}
+
+@media all and (max-width: 900px) {
+  .signin {
+    background-color: transparent;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .signup {
+    margin-left: 10px;
+    width: 77px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ffeba3;
+    cursor: pointer;
+  }
+  .navlinks {
+    margin-left: 10px;
+  }
 }
