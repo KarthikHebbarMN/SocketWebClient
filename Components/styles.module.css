@@ -17,9 +17,6 @@
     height:80vh;
     width:40%;
     background-color: rgb(255, 255, 255);  
-    /* display: flex; */
-    /* justify-content: column; */
-    /* align-items: center; */
 }
 .left_div h1{
     font-size: 2.5rem;
