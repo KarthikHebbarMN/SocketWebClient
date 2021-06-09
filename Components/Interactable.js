@@ -8,12 +8,12 @@ const Interactable = () => {
       <div className={styles.conatiner}>
         <div className={styles.split}>
           <div className={styles.left_div}>
-            <div className={styles.heading}>
+            <section className={styles.heading}>
               <h1>Get Personalised</h1>
-            </div>
-            <div className={styles.tab}>
+            </section>
+            <section className={styles.tab}>
               <Tab />
-            </div>
+            </section>
           </div>
           <div className={styles.right_div}>
             {/* <Img/> */}

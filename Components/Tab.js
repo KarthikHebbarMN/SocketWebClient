@@ -9,15 +9,8 @@ const Tab = () => {
   };
 
   const tabMain = tab_data.map((val) => (
-    <div className={styles.tab_container}>
-      <div className={styles.bloc_tabs}>
-        <button
-          className={toggleState === val.id ? styles.active_tabs : styles.tabs}
-          onClick={() => toggleTab(val.id)}>
-          {val.type}
-        </button>
-      </div>
-      <div className={styles.content_tabs}>
+    <>
+      <div className={styles.content_tab}>
         <div
           className={
             toggleState === val.id ? styles.active_content : styles.content
@@ -35,8 +28,34 @@ const Tab = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   ));
-  return <>{tabMain}</>;
+  return (
+    <div className={styles.tab_container}>
+      <div className={styles.bloc_tabs}>
+        <button
+          className={toggleState === 1 ? styles.active_tabs : styles.tabs}
+          onClick={() => toggleTab(1)}>
+          Floor
+        </button>
+        <button
+          className={toggleState === 2 ? styles.active_tabs : styles.tabs}
+          onClick={() => toggleTab(2)}>
+          Table
+        </button>
+        <button
+          className={toggleState === 3 ? styles.active_tabs : styles.tabs}
+          onClick={() => toggleTab(3)}>
+          Chair
+        </button>
+        <button
+          className={toggleState === 4 ? styles.active_tabs : styles.tabs}
+          onClick={() => toggleTab(4)}>
+          TV
+        </button>
+      </div>
+      {tabMain}
+    </div>
+  );
 };
 export default Tab;
