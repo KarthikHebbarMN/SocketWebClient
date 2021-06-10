@@ -1,4 +1,5 @@
 import React from "react";
+
 import Hero from "../components/Hero/Hero";
 import Cards from "../components/cards/Cards";
 import Items from "../components/items/Items";
@@ -14,6 +15,7 @@ export const Home = () => {
       <FAQ />
       <Footer />
     </>
+
   );
 };
 
