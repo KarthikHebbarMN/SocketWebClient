@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../FAQ/FAQ.module.css";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 export const FAQ = () => {
   return (
@@ -10,16 +11,28 @@ export const FAQ = () => {
         <div className={styles.list1}>
           <ul className={styles.listblock}>
             <li className={styles.listitems}>
-              Duis aute irure dolor in reprehenderit in voluptate velit?
+              Duis aute irure dolor in reprehenderit in voluptate velit?{" "}
+              <a href="" className={styles.arrow}>
+                <ArrowForwardIosIcon />
+              </a>
             </li>
             <li className={styles.listitems}>
               Duis aute irure dolor in reprehenderit in voluptate velit?
+              <a href="" className={styles.arrow}>
+                <ArrowForwardIosIcon />
+              </a>
             </li>
             <li className={styles.listitems}>
               Duis aute irure dolor in reprehenderit in voluptate velit?
+              <a href="" className={styles.arrow}>
+                <ArrowForwardIosIcon />
+              </a>
             </li>
             <li className={styles.listitems}>
               Duis aute irure dolor in reprehenderit in voluptate velit?
+              <a href="" className={styles.arrow}>
+                <ArrowForwardIosIcon />
+              </a>
             </li>
           </ul>
         </div>
@@ -28,15 +41,27 @@ export const FAQ = () => {
         <ul className={styles.listblock1}>
           <li className={styles.listitems}>
             Duis aute irure dolor in reprehenderit in voluptate velit?
+            <a href="" className={styles.arrow}>
+              <ArrowForwardIosIcon />
+            </a>
           </li>
           <li className={styles.listitems}>
             Duis aute irure dolor in reprehenderit in voluptate velit?
+            <a href="" className={styles.arrow}>
+              <ArrowForwardIosIcon />
+            </a>
           </li>
           <li className={styles.listitems}>
             Duis aute irure dolor in reprehenderit in voluptate velit?
+            <a href="" className={styles.arrow}>
+              <ArrowForwardIosIcon />
+            </a>
           </li>
           <li className={styles.listitems}>
             Duis aute irure dolor in reprehenderit in voluptate velit?
+            <a href="" className={styles.arrow}>
+              <ArrowForwardIosIcon />
+            </a>
           </li>
         </ul>
       </div>

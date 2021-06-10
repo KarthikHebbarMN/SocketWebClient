@@ -5,6 +5,7 @@
 
 .navbar {
   display: flex;
+  width: 100%;
   padding: 40px 120px;
 }
 
@@ -17,7 +18,7 @@
   margin-top: -25px;
 }
 .navlinks {
-  /* flex: 1; */
+  flex: 1;
   width: 100%;
 }
 
@@ -46,7 +47,7 @@
   content: "";
   width: 0;
   height: 2px;
-  background: yellow;
+  background: black;
   display: block;
   margin: auto;
   transition: 0.3s;
@@ -123,18 +124,20 @@
   position: absolute;
   width: 339px;
   height: 50px;
+
   left: 135px;
   top: 420px;
   border: none;
   background-color: white;
   border-radius: 15px;
-  border-top-left-radius: 15px;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
   line-height: 24px;
+  padding-left: 10px;
+  padding-top: 0px;
+  margin-top: 8px;
 }
 
 .searchbtn {
@@ -165,6 +168,7 @@
 
 @media all and (max-width: 900px) {
   .signin {
+    margin: auto;
     background-color: transparent;
     border-radius: 15px;
     border: none;
@@ -179,7 +183,39 @@
     background-color: #ffeba3;
     cursor: pointer;
   }
+
   .navlinks {
-    margin-left: 10px;
+    padding-left: 0px;
+    margin-left: -290px;
+    flex: 1;
+    width: 1030px;
+  }
+}
+
+@media all and (max-width: 360px) {
+  .signin {
+    position: absolute;
+    top: 20px;
+    left: 1200px;
+    background-color: transparent;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+  }
+  .signup {
+    position: absolute;
+    top: 10px;
+    left: 1300px;
+    margin-left: 5px;
+    width: 77px;
+    height: 35px;
+    border-radius: 15px;
+    border: none;
+    background-color: #ffeba3;
+    cursor: pointer;
+  }
+  .navlinks {
+    position: absolute;
+    display: inline;
   }
 }

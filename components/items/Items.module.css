@@ -189,6 +189,10 @@
   font-weight: normal;
   font-size: 30px;
   line-height: 24px;
+
+  padding-left: 15px;
+  padding-top: 0px;
+  margin-top: 8px;
 }
 .searchbtn {
   background: #016ab7;
