@@ -5,6 +5,8 @@ import Cards from "../components/cards/Cards";
 import Items from "../components/items/Items";
 import FAQ from "../components/FAQ/FAQ";
 import Footer from "../components/Footer/Footer";
+import Progress from '../Components/Userflow/progress'
+
 
 export const Home = () => {
   return (
@@ -14,6 +16,7 @@ export const Home = () => {
       <Items />
       <FAQ />
       <Footer />
+      <Progress />
     </>
 
   );
