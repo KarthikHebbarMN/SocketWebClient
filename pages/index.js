@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
 
-export const Home = ()=> {
- return(
-     <div>HOME</div>
- );
-
-}
-
+import Interactable from "../Components/Interactable";
+export const Home = () => {
+  return (
+    <div>
+      <Interactable />
+    </div>
+  );
+};
 
 export default Home;
