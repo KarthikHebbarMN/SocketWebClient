@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './styles.module.css'
 import { makeStyles } from '@material-ui/core/styles';
 import Stepper from '@material-ui/core/Stepper';
 import Step from '@material-ui/core/Step';
@@ -15,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft : '50px',
     paddingRight : '35px',
     paddingBottom : '35px',  
-    height : '60vh' 
+    height : '60vh', 
   },
   button: {
     marginTop: theme.spacing(1),
@@ -70,8 +71,9 @@ export default function Progress() {
 
   
   return (
-      <div className={classes.root}  style = {{backgroundColor : '#EEF2F7'}}>
-      <Stepper activeStep={activeStep} orientation="vertical" style = {{backgroundColor : '#fff', boxShadow : ' 0 2.8px 2.2px rgba(0, 0, 0, 0.034)', borderRadius : '10px'}}>
+      <div className = {styles.container}>
+        <div className={classes.root} >
+      <Stepper activeStep={activeStep} orientation="vertical" style = {{backgroundColor : "transparent"}}>
         {steps.map((label, index) => (
           <Step key={label}>
             <StepLabel>{label}</StepLabel>
@@ -108,7 +110,12 @@ export default function Progress() {
           </Button>
         </Paper>
       )}
+     
     </div>
+        <div className = {styles.image}>
+          <img className = {styles.phoneImg} src = "/images/phone.jpg" alt = "img" />
+        </div>
+      </div>
   
     
   );
