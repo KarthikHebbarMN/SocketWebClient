@@ -1,12 +1,12 @@
 import React,{Fragment} from "react";
 
-import Hero from "../components/Hero/Hero";
-import Cards from "../components/cards/Cards";
-import Items from "../components/items/Items";
-import FAQ from "../components/FAQ/FAQ";
-import Footer from "../components/Footer/Footer";
-import Progress from "../components/flow";
-import Interactable from "../components/Interactable/Interactable";
+import Hero from "../component/Hero/Hero";
+import Cards from "../component/cards/Cards";
+import Items from "../component/items/Items";
+import FAQ from "../component/FAQ/FAQ";
+import Footer from "../component/Footer/Footer";
+import Progress from "../component/flow";
+import Interactable from "../component/Interactable/Interactable";
 
 export const Home = () => {
   return (
