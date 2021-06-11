@@ -30,7 +30,7 @@ export const Footer = () => {
                 </ul>
               </div>
               <div className={styles.footercol}>
-                <h4>About</h4>
+                <h4 className={styles.footerhead}>About</h4>
                 <ul>
                   <li className={styles.listitems}>
                     <a href="#">Catalog</a>
@@ -44,7 +44,7 @@ export const Footer = () => {
                 </ul>
               </div>
               <div className={styles.footercol}>
-                <h4>Catalog</h4>
+                <h4 className={styles.footerhead}>Catalog</h4>
                 <ul>
                   <li className={styles.listitems}>
                     <a href="#">Catalog</a>
