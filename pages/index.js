@@ -5,6 +5,11 @@ import Cards from "../components/cards/Cards";
 import Items from "../components/items/Items";
 import FAQ from "../components/FAQ/FAQ";
 import Footer from "../components/Footer/Footer";
+<<<<<<< Updated upstream
+=======
+import Progress from "../components/Userflow/progress";
+import Interactable from "../components/Interactable";
+>>>>>>> Stashed changes
 
 export const Home = () => {
   return (
@@ -12,10 +17,11 @@ export const Home = () => {
       <Hero />
       <Cards />
       <Items />
+      <Interactable />
+      <Progress />
       <FAQ />
       <Footer />
     </>
-
   );
 };
 

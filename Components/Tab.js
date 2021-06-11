@@ -14,16 +14,17 @@ const Tab = () => {
         <div
           className={
             toggleState === val.id ? styles.active_content : styles.content
-          }>
+          }
+        >
           <div className={styles.list_main}>
             <div className={styles.list}>
-              <img className={styles.item_img} src={val.img1} alt='img'></img>
+              <img className={styles.item_img} src={val.img1} alt="img"></img>
             </div>
             <div className={styles.list}>
-              <img className={styles.item_img} src={val.img2} alt='img'></img>
+              <img className={styles.item_img} src={val.img2} alt="img"></img>
             </div>
             <div className={styles.list}>
-              <img className={styles.item_img} src={val.img3} alt='img'></img>
+              <img className={styles.item_img} src={val.img3} alt="img"></img>
             </div>
           </div>
         </div>
@@ -35,22 +36,26 @@ const Tab = () => {
       <div className={styles.bloc_tabs}>
         <button
           className={toggleState === 1 ? styles.active_tabs : styles.tabs}
-          onClick={() => toggleTab(1)}>
+          onClick={() => toggleTab(1)}
+        >
           Floor
         </button>
         <button
           className={toggleState === 2 ? styles.active_tabs : styles.tabs}
-          onClick={() => toggleTab(2)}>
+          onClick={() => toggleTab(2)}
+        >
           Table
         </button>
         <button
           className={toggleState === 3 ? styles.active_tabs : styles.tabs}
-          onClick={() => toggleTab(3)}>
+          onClick={() => toggleTab(3)}
+        >
           Chair
         </button>
         <button
           className={toggleState === 4 ? styles.active_tabs : styles.tabs}
-          onClick={() => toggleTab(4)}>
+          onClick={() => toggleTab(4)}
+        >
           TV
         </button>
       </div>

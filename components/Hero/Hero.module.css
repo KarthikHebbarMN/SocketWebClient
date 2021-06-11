@@ -6,13 +6,13 @@
 .navbar {
   display: flex;
   width: 100%;
-  padding: 40px 120px;
+  padding: 40px 80px;
 }
 
 .hero {
   display: flex;
   align-items: center;
-  margin-top: -15px;
+  margin-top: 0px;
 }
 .navlogo {
   margin-top: -25px;
@@ -23,7 +23,7 @@
 }
 
 .navlinks ul {
-  margin-left: 255px;
+  margin-left: 5rem;
   display: inline;
 }
 
@@ -70,34 +70,40 @@
 }
 
 .signin {
-  margin-left: 150px;
+  position: relative;
+  float: right;
+  width: 77px;
+  height: 35px;
   background-color: transparent;
-  border-radius: 15px;
+  border-radius: 0.5rem;
   border: none;
   cursor: pointer;
 }
 .signup {
-  margin-left: 10px;
+  position: relative;
+  float: right;
   width: 77px;
   height: 35px;
-  border-radius: 15px;
+  border-radius: 0.5rem;
   border: none;
   background-color: #ffeba3;
   cursor: pointer;
 }
 .background {
-  position: absolute;
-  width: 1209px;
-  height: 748px;
-  left: 80px;
-  top: 88px;
+  margin-top: -200px;
+  position: relative;
+  width: 100%;
+  background-color: red;
+  height: 100vh;
   background: url("/images/Rectangle137.png") no-repeat;
   background-position: center;
   background-size: cover;
+  border-radius: 17px;
 }
 
 .divtext {
   margin: 192px 591px 446px 127px;
+  padding-top: 7rem;
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
@@ -168,6 +174,8 @@
 
 @media all and (max-width: 900px) {
   .signin {
+    position: relative;
+    float: right;
     margin: auto;
     background-color: transparent;
     border-radius: 15px;
@@ -175,6 +183,8 @@
     cursor: pointer;
   }
   .signup {
+    position: relative;
+    float: right;
     margin-left: 10px;
     width: 77px;
     height: 35px;
@@ -192,20 +202,18 @@
   }
 }
 
-@media all and (max-width: 360px) {
+@media all and (max-width: 1270px) {
   .signin {
-    position: absolute;
-    top: 20px;
-    left: 1200px;
+    float: right;
+    position: relative;
     background-color: transparent;
     border-radius: 15px;
     border: none;
     cursor: pointer;
   }
   .signup {
-    position: absolute;
-    top: 10px;
-    left: 1300px;
+    float: right;
+    position: relative;
     margin-left: 5px;
     width: 77px;
     height: 35px;
@@ -215,7 +223,8 @@
     cursor: pointer;
   }
   .navlinks {
-    position: absolute;
+    position: relative;
+    margin-left: 4px;
     display: inline;
   }
 }
