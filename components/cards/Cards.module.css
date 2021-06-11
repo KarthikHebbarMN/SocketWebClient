@@ -101,3 +101,20 @@
   font-weight: 500;
   font-size: 17px;
 }
+
+@media all and(max-width:360px) {
+  .card {
+    background: #fffaed;
+    position: relative;
+    width: 150px;
+    height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    justify-content: center;
+  }
+  .cardss {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+  }
+}

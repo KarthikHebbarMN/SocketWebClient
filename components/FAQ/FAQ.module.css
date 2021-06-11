@@ -53,26 +53,20 @@
 
 @media all and (max-width: 900px) {
   .listitems {
-    border-radius: 5px;
-    color: red;
-    justify-content: center;
-    text-align: center;
-    margin: 5px auto;
-    width: 4rem;
-    height: 40px;
-    padding-top: 1rem;
-    background-color: #9a9a9a;
-    width: 540px;
-    height: 70px;
+    width: 250px;
+    height: 35px;
     padding-top: 45px;
     list-style: none;
     font-family: Roboto;
-    font-size: 19px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: 0.5rem;
     letter-spacing: 0.4444444477558136px;
   }
+}
+
+@media all and (max-width: 900px) {
   .listblock1 {
     display: none;
   }
