@@ -50,7 +50,7 @@ function getStepContent(step) {
 }
 
 
-export default function App() {
+export default function Progress() {
   const classes = useStyles();
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
