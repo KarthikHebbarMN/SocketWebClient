@@ -5,7 +5,7 @@ import Cards from "../components/cards/Cards";
 import Items from "../components/items/Items";
 import FAQ from "../components/FAQ/FAQ";
 import Footer from "../components/Footer/Footer";
-import Progress from "../components/UserFlow";
+import Progress from "../components/UserFlow_2";
 import Interactable from "../components/Interactable/Interactable";
 
 export const Home = () => {
