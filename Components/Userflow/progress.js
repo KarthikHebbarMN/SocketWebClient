@@ -12,8 +12,8 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '40%',
-    paddingTop : '50px',
-    paddingLeft : '50px',
+    paddingTop : '100px',
+    paddingLeft : '70px',
     paddingRight : '35px',
     paddingBottom : '35px',  
     height : '60vh', 
