@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    background-color: #FFF5EA;
+}
+
+.image {
+    width : 300px;
+    height : 550px;
+    margin : 50px 191px 50px 300px;
+}
+
+.phoneImg {
+    height : 500px;
+    margin : 20px 10px 10px 20px;
+}
