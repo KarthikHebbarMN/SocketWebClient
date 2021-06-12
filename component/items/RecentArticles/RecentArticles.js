@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../Recentarticles/recentarticle.module.css";
+import styles from "../RecentArticles/recentarticle.module.css";
 
 export const RecentArticles = () => {
   return (
