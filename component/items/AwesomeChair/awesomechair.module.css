@@ -1,20 +1,24 @@
 .maindiv {
-  display: flex;
+  display: inline-flex;
   position: relative;
   margin: 5rem auto;
-  width: 100%;
-  height: 150vh;
+  width: 90vw;
+  height: 120vh;
   background-color: #fffaed;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .itemsdiv {
-  width: 40%;
+  width: 50%;
   margin-top: 5rem;
   margin-left: 4rem;
+  flex-wrap: wrap;
 }
 
 .first {
   position: relative;
+  flex-wrap: wrap;
   width: 486px;
   height: 325.57px;
   background: url("/images/Rectangle151.png") no-repeat;
@@ -24,32 +28,37 @@
 
 .second {
   position: relative;
+  flex-wrap: wrap;
   width: 486px;
   height: 325.57px;
-
   background: url("/images/Rectangle151.png") no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .third {
+  margin-left: 40em;
   display: flex;
-  justify-content: space-evenly;
-  float: right;
-  width: 60%;
-  margin-top: 6.3rem;
-  height: fit-content;
   background-color: #fff2f2;
-  margin-top: 0px auto;
+  width: 50vw;
+  height: 100vh;
+  align-content: center;
+  margin-top: -40em;
+}
+
+.thirdchair {
+  margin-left: 200px;
+  padding-left: 200px;
 }
 
 .awesome {
   margin-left: 30px;
+  font-size: 15px;
 }
 
 .awesome1 {
   margin-left: 30px;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 }
 
 .awesomebtn {
@@ -73,23 +82,8 @@
   height: 33px;
   color: white;
   cursor: pointer;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   margin-left: -13rem;
-}
-
-.letsgo {
-  position: relative;
-  width: 279px;
-  height: 78px;
-  background: #0f1312;
-  border: none;
-  outline: none;
-  color: white;
-  font-size: 32px;
-  border-radius: 15px;
-  cursor: pointer;
-  margin-left: 25rem;
-  margin-top: 5rem;
 }
 
 @media all and (max-width: 900px) {
