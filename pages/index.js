@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import Hero from "../component/Hero/Hero";
 import Cards from "../component/cards/Cards";
 import AwesomeChair from "../component/items/AwesomeChair/AwesomeChair";
-import Letsbuild from "../component/items/Letsbuild/Letsbuild";
+import Letsbuild from "../component/items/Letsbuild";
 
 import FAQ from "../component/FAQ/FAQ";
 import Footer from "../component/Footer/Footer";

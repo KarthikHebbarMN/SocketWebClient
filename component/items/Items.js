@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import AwesomeChair from "./AwesomeChair/AwesomeChair";
-import LetsBuild from "./Letsbuild/LetsBuild";
+import LetsBuild from "./Letsbuild";
 import RecentArticles from "./RecentArticles/RecentArticles";
 
 export const Items = () => {
