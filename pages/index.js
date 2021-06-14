@@ -11,14 +11,14 @@ import Interactable from "../component/Interactable/Interactable";
 export const Home = () => {
   return (
    <Fragment>
-      <Hero />
+      {/* <Hero />
       <Cards />
       <Progress />
       <Items />
-      <Interactable />
+      <Interactable /> */}
       <Progress/>
-      <FAQ />
-      <Footer />
+      {/* <FAQ />
+      <Footer /> */}
       </Fragment>
   );
 };
