@@ -1,5 +1,5 @@
-import React,{Fragment} from "react";
 
+import React,{Fragment} from "react";
 import Hero from "../component/Hero/Hero";
 import Cards from "../component/cards/Cards";
 import Items from "../component/items/Items";
@@ -13,6 +13,7 @@ export const Home = () => {
    <Fragment>
       <Hero />
       <Cards />
+      <Progress />
       <Items />
       <Interactable />
       <Progress/>
