@@ -1,24 +1,28 @@
-import React,{Fragment} from "react";
-
+import React, { Fragment } from "react";
 import Hero from "../component/Hero/Hero";
 import Cards from "../component/cards/Cards";
-import Items from "../component/items/Items";
+import AwesomeChair from "../component/items/AwesomeChair/AwesomeChair";
+import Letsbuild from "../component/items/Letsbuild/Letsbuild";
+
 import FAQ from "../component/FAQ/FAQ";
 import Footer from "../component/Footer/Footer";
-import Progress from "../component/UserFlow" ;
+import Progress from "../component/UserFlow";
 import Interactable from "../component/Interactable/Interactable";
+import RecentArticles from "../component/items/RecentArticles/RecentArticles";
 
 export const Home = () => {
   return (
-   <Fragment>
+    <Fragment>
       <Hero />
       <Cards />
-      <Items />
+      <AwesomeChair />
+      <Letsbuild />
       <Interactable />
-      <Progress/>
+      <RecentArticles />
+      <Progress />
       <FAQ />
       <Footer />
-      </Fragment>
+    </Fragment>
   );
 };
 
