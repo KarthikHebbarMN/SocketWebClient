@@ -12,8 +12,8 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
   root: {
     width: '40%',
-    paddingTop : '50px',
-    paddingLeft : '50px',
+    paddingTop : '100px',
+    paddingLeft : '70px',
     paddingRight : '35px',
     paddingBottom : '35px',  
     height : '60vh', 
@@ -21,6 +21,8 @@ const useStyles = makeStyles((theme) => ({
   button: {
     marginTop: theme.spacing(1),
     marginRight: theme.spacing(1),
+    backgroundColor : '#000',
+    color : '#fff'
   },
   actionsContainer: {
     paddingTop : '10px',
@@ -28,10 +30,8 @@ const useStyles = makeStyles((theme) => ({
   },
   resetContainer: {
     padding: theme.spacing(3),
-  },
-  circle : {
-    backgroundColor : '#000'
   }
+
 }));
 
 function getSteps() {
@@ -74,15 +74,20 @@ export default function Progress() {
       <div className = {styles.container}>
         <div className={classes.root} >
       <Stepper activeStep={activeStep} orientation="vertical" style = {{backgroundColor : "transparent"}}>
-        {steps.map((label, index) => (
-          <Step key={label}>
-            <StepLabel>{label}</StepLabel>
+        {steps.map((label, index) => {
+          let props = {};
+          let labelProps = {};
+          labelProps.icon = <div style={{ backgroundColor: '#000', color : '#fff', width: '11px', padding: '10px', textAlign: 'center', height: '11px', fontSize: '14px', borderRadius: '50%' }}>{index}</div>
+          return (<Step key={label}{...props}>
+            <StepLabel {...labelProps}>{label}</StepLabel>
             <StepContent>
               <Typography>{getStepContent(index)}</Typography>
               <div className={classes.actionsContainer}>
                 <div>
                   <Button
                     disabled={activeStep === 0}
+                    variant = "contained"
+                  
                     onClick={handleBack}
                     className={classes.button}
                   >
@@ -92,6 +97,7 @@ export default function Progress() {
                     variant="contained"
                     color="primary"
                     onClick={handleNext}
+                    style = {{backgroundColor : "#000000"}}
                     className={classes.button}
                   >
                     {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
@@ -100,12 +106,13 @@ export default function Progress() {
               </div>
             </StepContent>
           </Step>
-        ))}
+          );
+          })}
       </Stepper>
       {activeStep === steps.length && (
         <Paper square elevation={0} className={classes.resetContainer}>
           <Typography>All steps completed - you&apos;re finished</Typography>
-          <Button onClick={handleReset} className={classes.button}>
+          <Button onClick={handleReset} className={classes.button} style = {{backgroundColor : '#000'}}>
             Reset
           </Button>
         </Paper>
