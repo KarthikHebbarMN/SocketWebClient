@@ -1,19 +1,24 @@
 .maindiv {
+  display: inline-flex;
   position: relative;
   margin: 5rem auto;
   width: 90vw;
-  height: 100vh;
+  height: 120vh;
   background-color: #fffaed;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .itemsdiv {
-  width: 40%;
+  width: 50%;
   margin-top: 5rem;
   margin-left: 4rem;
+  flex-wrap: wrap;
 }
 
 .first {
   position: relative;
+  flex-wrap: wrap;
   width: 486px;
   height: 325.57px;
   background: url("/images/Rectangle151.png") no-repeat;
@@ -23,23 +28,27 @@
 
 .second {
   position: relative;
+  flex-wrap: wrap;
   width: 486px;
   height: 325.57px;
-
   background: url("/images/Rectangle151.png") no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .third {
+  margin-left: 40em;
   display: flex;
-  flex-wrap: wrap;
-  float: right;
-  width: 60%;
-  margin-top: 6.3rem;
-  height: fit-content;
   background-color: #fff2f2;
-  margin-top: 0px auto;
+  width: 50vw;
+  height: 100vh;
+  align-content: center;
+  margin-top: -40em;
+}
+
+.thirdchair {
+  margin-left: 200px;
+  padding-left: 200px;
 }
 
 .awesome {
@@ -49,7 +58,7 @@
 
 .awesome1 {
   margin-left: 30px;
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
 }
 
 .awesomebtn {
@@ -73,7 +82,7 @@
   height: 33px;
   color: white;
   cursor: pointer;
-  margin-top: 10rem;
+  /* margin-top: 10rem; */
   margin-left: -13rem;
 }
 
