@@ -10,13 +10,13 @@ import Progress from '../Components/Userflow/progress'
 export const Home = () => {
   return (
     <>
-      <Hero />
-      <Cards />
+      {/* <Hero />
+      <Cards /> */}
       <Progress />
-      <Items />
+      {/* <Items />
       <Interactable/>
       <FAQ />
-      <Footer />
+      <Footer /> */}
     </>
 
   );
