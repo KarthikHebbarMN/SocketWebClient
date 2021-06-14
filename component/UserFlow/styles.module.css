@@ -1,6 +1,15 @@
+
 .container {
     display: flex;
     background-color: #FFF5EA;
+    
+}
+
+
+.root {
+    width : 40%;
+    height : 60vh;
+    padding : 100px 35px 35px 70px;
 }
 
 .image {
