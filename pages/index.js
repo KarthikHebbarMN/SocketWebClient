@@ -18,10 +18,10 @@ export const Home = () => {
       <AwesomeChair />
       <Letsbuild />
       <Interactable />
-      {/* <RecentArticles />
-      <Progress /> */}
-      {/* <FAQ />
-      <Footer /> */}
+      <RecentArticles />
+      <Progress />
+      <FAQ />
+      <Footer />
     </Fragment>
   );
 };
