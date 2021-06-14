@@ -1,22 +1,27 @@
 .articles {
   position: relative;
-  width: 100%;
-  height: 120vh;
+  width: 100vw;
+  height: fit-content;
   background: #fffaed;
+  flex-wrap: wrap;
 }
 
 .maindiv {
+  margin-left: 5px;
   display: flex;
-  position: relative;
-  width: 60%;
+  width: 50%;
+  flex-wrap: wrap;
+  height: fit-content;
+  justify-content: center;
+  display: flex;
 }
 
 .maindiv2 {
-  display: block;
+  margin-left: 1em;
   float: right;
-  width: 38%;
-
-  margin-top: -30rem;
+  width: 50%;
+  margin-top: -30%;
+  padding-left: 5%;
 }
 
 .recent {
@@ -33,18 +38,21 @@
 .article1 {
   position: relative;
   margin: auto;
-  width: 370px;
-  height: 480px;
+  width: 20em;
+  height: 30em;
+  border-radius: 12px;
   background: url("/images/dental.png") no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .article2 {
+  margin-left: 10px;
   position: relative;
-  width: 370px;
-  height: 480px;
-
+  margin: auto;
+  width: 20em;
+  height: 30em;
+  border-radius: 12px;
   background: url("/images/cardeology.png") no-repeat;
   background-position: center;
   background-size: cover;
@@ -52,16 +60,16 @@
 
 .smalldiv1 {
   position: relative;
-  width: 370px;
-  height: 224px;
+  width: 25em;
+  height: 10rem;
   background: #f7f6fe;
   border-radius: 16px;
 }
 
 .smalldiv2 {
   position: relative;
-  width: 370px;
-  height: 224px;
+  width: 25em;
+  height: 10rem;
   background: #f7f6fe;
   border-radius: 16px;
 }
@@ -77,9 +85,9 @@
 }
 
 .morearticles {
-  position: relative;
-  margin-left: 32rem;
-  margin-top: 5rem;
+  margin: auto;
+  display: block;
+  margin-top: 5%;
   width: 170px;
   height: 48px;
   background-color: #2767a7;

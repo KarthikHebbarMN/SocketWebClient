@@ -2,8 +2,8 @@
   display: inline-flex;
   position: relative;
   margin: 5rem auto;
-  width: 100vw;
-  height: 130vh;
+  width: 90vw;
+  height: 120vh;
   background-color: #fffaed;
   flex-wrap: wrap;
   align-content: space-between;
@@ -19,70 +19,51 @@
 .first {
   position: relative;
   flex-wrap: wrap;
-  width: 30.3em;
-  height: 20em;
+  width: 486px;
+  height: 325.57px;
   background: url("/images/Rectangle151.png") no-repeat;
   background-position: center;
   background-size: cover;
-  flex-wrap: wrap;
-  border-radius: 10px;
 }
 
 .second {
-  margin-top: 5px;
   position: relative;
   flex-wrap: wrap;
-  width: 30.3em;
-  height: 20em;
+  width: 486px;
+  height: 325.57px;
   background: url("/images/Rectangle151.png") no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 10px;
 }
 
 .third {
-  margin-left: 35em;
-  display: inline-flex;
-  flex-wrap: wrap;
+  margin-left: 40em;
+  display: flex;
   background-color: #fff2f2;
-  width: 100em;
-  height: 40em;
+  width: 50vw;
+  height: 100vh;
   align-content: center;
-  margin-top: -41em;
-  padding-left: 50px;
-  border-radius: 10px;
-}
-.thirdchair {
-  margin: auto;
+  margin-top: -40em;
 }
 
-.awesome2 {
-  margin-left: 2em;
+.thirdchair {
+  margin-left: 200px;
+  padding-left: 200px;
 }
 
 .awesome {
-  margin-top: 5%;
   margin-left: 30px;
   font-size: 15px;
-  padding-top: 5%;
 }
 
 .awesome1 {
   margin-left: 30px;
-  margin-top: 5%;
+  /* margin-top: 6rem; */
 }
-.letsgo {
-  color: white;
-  font-size: 25px;
-  background-color: black;
-  border: none;
-  border-radius: 10px;
-  margin: auto;
-  display: block;
-}
+
 .awesomebtn {
   position: relative;
-  margin-left: 2rem;
+  margin-left: 3rem;
   background: #161616;
   border: none;
   outline: none;
@@ -105,7 +86,7 @@
   margin-left: -13rem;
 }
 
-/* @media all and (max-width: 900px) {
+@media all and (max-width: 900px) {
   .first {
     position: relative;
     width: 283px;
@@ -122,4 +103,4 @@
     background-position: center;
     background-size: cover;
   }
-} */
+}
