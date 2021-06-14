@@ -7,12 +7,12 @@ export const Footer = () => {
       <div className={styles.footerr}>
         <footer className={styles.footer}>
           <div className={styles.container}>
+            <p className={styles.pname}>
+              Working with wireframes may be a<br /> architecture to the visual
+              design.
+            </p>
             <div className={styles.row}>
               <div className={styles.footercol}>
-                <p className={styles.pname}>
-                  Working with wireframes may be a<br /> architecture to the
-                  visual design.
-                </p>
                 <h4 className={styles.footerhead}>Store</h4>
                 <ul>
                   <li className={styles.listitems}>
