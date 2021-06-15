@@ -18,7 +18,6 @@ export const AwesomeChair = () => {
             <button className={styles.awesomebtn}>Buy now</button>
           </div>
         </div>
-
         <div className={styles.third}>
           <div>
             <h2 className={styles.awesome1}>Awesome Chair</h2>

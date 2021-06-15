@@ -1,18 +1,45 @@
-.btn-primary {
-  color: #fff;
-  background-color: black;
-  border-color: white;
-  margin-right: 5px;
+.nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav img {
+  width: 20%;
+  height: 20%;
 }
 
-.navbar nav {
-  margin: 10% auto;
+.navlinks {
+  flex: 1;
+  text-align: center;
+}
+.navlinks ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.navlinks ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+.navlinks ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: yellow;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navlinks ul li:hover::after {
+  width: 100%;
 }
 
 .btn {
   background: #ffd569;
   border-radius: 5px;
-  margin-right: 5rem;
   border: none;
   font-size: 18px;
 }
@@ -30,14 +57,15 @@
 
 /* Navbar ends */
 .background {
-  width: 90vw;
-  height: 100vh;
-  margin-left: 5%;
+  min-height: 100vh;
+  max-width: 90%;
   background: url("/images/Rectangle137.png") no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 17px;
+  position: relative;
   background-size: 100% auto;
+  border-radius: 17px;
+  margin: 5px auto;
 }
 
 .divtext {
@@ -68,10 +96,11 @@
 
 .searchbar {
   position: static;
-  left: 8%;
+  /* left: 10%; */
   top: 2%;
-  width: 339px;
-  height: 50px;
+  padding-top: 5px;
+  width: 12em;
+  height: 1.7em;
   border: none;
   background-color: white;
   border-radius: 15px;
@@ -87,20 +116,20 @@
 
 .searchbtn {
   color: black;
-  padding-left: 10px;
-  padding-top: 15%;
   margin-top: 20px;
-  width: 115px;
-  height: 35px;
+  width: 5em;
+  height: 1.7em;
   display: flex;
   background-color: #202020;
   justify-content: center;
   align-items: center;
+
   border-radius: 10px;
 }
 
 .searchtext {
   border: none;
+  border-radius: 10px;
   background: white;
   outline: none;
   float: left;
@@ -137,7 +166,7 @@
   }
   .divptext {
     position: relative;
-    width: 50vw;
+    width: 30vw;
     height: 20vh;
     left: 8%;
     top: 5%;
@@ -162,7 +191,7 @@
     background-color: #202020;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 15px;
   }
 }
 
@@ -186,7 +215,7 @@
     font-family: Poppins;
     font-style: normal;
     font-weight: 600;
-    font-size: calc(14px+10vw);
+    font-size: calc(12px+10vw);
     line-height: 91.9%;
     color: #202020;
   }

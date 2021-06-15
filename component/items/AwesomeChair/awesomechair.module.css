@@ -1,59 +1,45 @@
 .maindiv {
-  display: inline-flex;
   position: relative;
+  max-width: 90vw;
+  max-height: max-content;
+  background: #fffaed;
   margin: 5rem auto;
-  width: 100vw;
-  height: 130vh;
-  background-color: #fffaed;
-  flex-wrap: wrap;
-  align-content: space-between;
+  border-radius: 15px;
 }
 
 .itemsdiv {
-  width: 50%;
-  margin-top: 5rem;
-  margin-left: 4rem;
-  flex-wrap: wrap;
+  margin-left: 10%;
+  padding-top: 2%;
+  justify-content: space-between;
+  max-width: 40vw;
+  max-height: fit-content;
+  justify-content: center;
 }
-
+.third {
+  border-radius: 15px;
+  background-color: #fff2f2;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 40vw;
+  display: flex;
+}
 .first {
   position: relative;
-  flex-wrap: wrap;
-  width: 30.3em;
-  height: 20em;
+  width: 22em;
+  height: 20rem;
   background: url("/images/Rectangle151.png") no-repeat;
   background-position: center;
-  background-size: cover;
-  flex-wrap: wrap;
   border-radius: 10px;
 }
 
 .second {
-  margin-top: 5px;
   position: relative;
-  flex-wrap: wrap;
-  width: 30.3em;
-  height: 20em;
+  width: 22em;
+  height: 20rem;
   background: url("/images/Rectangle151.png") no-repeat;
   background-position: center;
-  background-size: cover;
   border-radius: 10px;
-}
-
-.third {
-  margin-left: 35em;
-  display: inline-flex;
-  flex-wrap: wrap;
-  background-color: #fff2f2;
-  width: 100em;
-  height: 40em;
-  align-content: center;
-  margin-top: -41em;
-  padding-left: 50px;
-  border-radius: 10px;
-}
-.thirdchair {
-  margin: auto;
 }
 
 .awesome2 {
