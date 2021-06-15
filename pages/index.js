@@ -16,9 +16,9 @@ export const Home = () => {
       <Hero />
       <Cards />
       <AwesomeChair />
-      <Letsbuild />
+
       <Interactable />
-      <RecentArticles />
+
       <Progress />
       <FAQ />
       <Footer />
