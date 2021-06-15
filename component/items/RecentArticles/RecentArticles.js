@@ -21,24 +21,24 @@ export const RecentArticles = () => {
             </h3>
             <h4 className={styles.date}>30 october 2019</h4>
           </div>
+          <div className={styles.maindiv2}>
+            <div className={styles.smalldiv1}>
+              <h4 className={styles.eyecare}>Eye Care</h4>
+              <h2 className={styles.topic}>
+                After the daily classes he no longer collapsed
+              </h2>
+              <h4 className={styles.smalldivdate}>30 october 2019</h4>
+            </div>
+            <div className={styles.smalldiv2}>
+              <h4 className={styles.eyecare}>Eye Care</h4>
+              <h2 className={styles.topic}>
+                After the daily classes he no longer collapsed
+              </h2>
+              <h4 className={styles.smalldivdate}>30 october 2019</h4>
+            </div>
+          </div>
         </div>
 
-        <div className={styles.maindiv2}>
-          <div className={styles.smalldiv1}>
-            <h4 className={styles.eyecare}>Eye Care</h4>
-            <h2 className={styles.topic}>
-              After the daily classes he no longer collapsed
-            </h2>
-            <h4 className={styles.smalldivdate}>30 october 2019</h4>
-          </div>
-          <div className={styles.smalldiv2}>
-            <h4 className={styles.eyecare}>Eye Care</h4>
-            <h2 className={styles.topic}>
-              After the daily classes he no longer collapsed
-            </h2>
-            <h4 className={styles.smalldivdate}>30 october 2019</h4>
-          </div>
-        </div>
         <button className={styles.morearticles}>More Articles</button>
       </div>
     </>

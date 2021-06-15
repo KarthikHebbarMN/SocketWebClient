@@ -1,69 +1,74 @@
 .maindiv {
-  display: inline-flex;
   position: relative;
+  max-width: 90vw;
+  max-height: max-content;
+  background: #fffaed;
   margin: 5rem auto;
-  width: 90vw;
-  height: 120vh;
-  background-color: #fffaed;
-  flex-wrap: wrap;
-  align-content: space-between;
+  border-radius: 15px;
 }
 
 .itemsdiv {
-  width: 50%;
-  margin-top: 5rem;
-  margin-left: 4rem;
-  flex-wrap: wrap;
+  margin-left: 10%;
+  padding-top: 2%;
+  justify-content: space-between;
+  max-width: 40vw;
+  max-height: fit-content;
+  justify-content: center;
 }
-
+.third {
+  border-radius: 15px;
+  background-color: #fff2f2;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  width: 40vw;
+  display: flex;
+}
 .first {
   position: relative;
-  flex-wrap: wrap;
-  width: 486px;
-  height: 325.57px;
+  width: 22em;
+  height: 20rem;
   background: url("/images/Rectangle151.png") no-repeat;
   background-position: center;
-  background-size: cover;
+  border-radius: 10px;
 }
 
 .second {
   position: relative;
-  flex-wrap: wrap;
-  width: 486px;
-  height: 325.57px;
+  width: 22em;
+  height: 20rem;
   background: url("/images/Rectangle151.png") no-repeat;
   background-position: center;
-  background-size: cover;
+  border-radius: 10px;
 }
 
-.third {
-  margin-left: 40em;
-  display: flex;
-  background-color: #fff2f2;
-  width: 50vw;
-  height: 100vh;
-  align-content: center;
-  margin-top: -40em;
-}
-
-.thirdchair {
-  margin-left: 200px;
-  padding-left: 200px;
+.awesome2 {
+  margin-left: 2em;
 }
 
 .awesome {
+  margin-top: 5%;
   margin-left: 30px;
   font-size: 15px;
+  padding-top: 5%;
 }
 
 .awesome1 {
   margin-left: 30px;
-  /* margin-top: 6rem; */
+  margin-top: 5%;
 }
-
+.letsgo {
+  color: white;
+  font-size: 25px;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  display: block;
+}
 .awesomebtn {
   position: relative;
-  margin-left: 3rem;
+  margin-left: 2rem;
   background: #161616;
   border: none;
   outline: none;
@@ -86,7 +91,7 @@
   margin-left: -13rem;
 }
 
-@media all and (max-width: 900px) {
+/* @media all and (max-width: 900px) {
   .first {
     position: relative;
     width: 283px;
@@ -103,4 +108,4 @@
     background-position: center;
     background-size: cover;
   }
-}
+} */

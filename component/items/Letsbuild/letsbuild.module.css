@@ -1,11 +1,11 @@
 .banner {
   position: relative;
-  width: 100vw;
+  max-width: 100%;
   height: fit-content;
 }
 
 .innerbanner {
-  width: 100%;
+  max-width: 100%;
   height: 20em;
   background: url("/images/banner.png") no-repeat;
   background-position: center;
@@ -13,15 +13,16 @@
 }
 
 .searchbarbanner {
-  position: relative;
-  margin-left: 40em;
+  display: block;
+  margin: auto;
+  margin-left: 45%;
   padding-top: 11%;
 }
 
 .searchbar {
   position: relative;
-  width: 25vw;
-  height: 5vh;
+  max-width: 25vw;
+  min-height: 5vh;
   border: none;
   background-color: white;
   border-radius: 15px;
@@ -39,7 +40,7 @@
   padding-left: 10px;
   padding-top: 2.2rem;
   margin-top: 15px;
-  width: 115px;
+  width: 1.2em;
   height: 30px;
   display: flex;
   background-color: #016ab7;

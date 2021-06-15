@@ -1,10 +1,10 @@
 .heading h1 {
   position: relative;
   text-align: center;
-  width: 70vw;
-  height: 30vh;
+  width: 50vw;
+  height: fit-content;
   /* width: 50%; */
-  margin: 2px auto;
+  margin: 5rem auto;
   text-align: center;
 
   font-family: Playfair Display;
@@ -25,6 +25,7 @@
 }
 
 .card {
+  margin-top: 15px;
   background: #fffaed;
   position: relative;
   width: 314px;
@@ -35,6 +36,7 @@
 }
 
 .card2 {
+  margin-top: 15px;
   background: #fffaed;
   position: relative;
   width: 314px;
@@ -45,6 +47,7 @@
 }
 
 .card3 {
+  margin-top: 15px;
   background: #fffaed;
   position: relative;
   width: 314px;

@@ -13,8 +13,8 @@ export const Footer = () => {
             </p>
             <div className={styles.row}>
               <div className={styles.footercol}>
-                <h4 className={styles.footerhead}>Store</h4>
                 <ul>
+                  <h4 className={styles.footerhead}>Store</h4>
                   <li className={styles.listitems}>
                     <a href="#">Catalog</a>
                   </li>
@@ -30,8 +30,8 @@ export const Footer = () => {
                 </ul>
               </div>
               <div className={styles.footercol}>
-                <h4 className={styles.footerhead}>About</h4>
                 <ul>
+                  <h4 className={styles.footerhead}>About</h4>
                   <li className={styles.listitems}>
                     <a href="#">Catalog</a>
                   </li>
@@ -44,8 +44,8 @@ export const Footer = () => {
                 </ul>
               </div>
               <div className={styles.footercol}>
-                <h4 className={styles.footerhead}>Catalog</h4>
                 <ul>
+                  <h4 className={styles.footerhead}>Catalog</h4>
                   <li className={styles.listitems}>
                     <a href="#">Catalog</a>
                   </li>
