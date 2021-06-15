@@ -78,7 +78,7 @@ export default function Progress() {
         {steps.map((label, index) => {
           let props = {};
           let labelProps = {};
-          labelProps.icon = <div style={{ backgroundColor: '#343A40', color : '#fff', width: '11px', padding: '17px', textAlign: 'center', height: '11px', fontSize: '16px', borderRadius: '50%' }}>{index}</div>
+          labelProps.icon = <div style={{ backgroundColor: '#343A40', color : '#fff', borderRadius :'50%',height : '35px', width : '35px', lineHeight : '35px', textAlign : 'center'}}>{index}</div>
           return (<Step key={label}{...props}>
             <StepLabel {...labelProps}>{label}</StepLabel>
             <StepContent>
