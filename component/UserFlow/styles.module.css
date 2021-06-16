@@ -1,18 +1,22 @@
 .container {
+    width : 100%;
+    height : auto;
     display: flex;
+    flex-direction: column;
     background-color: #FFF5EA;
-    
+    justify-content: space-around;
+    flex-flow: nowrap;
 }
 
 
 .root {
-    width : 40%;
+    width : 50%;
     height : 60vh;
     padding : 100px 35px 35px 70px;
 }
 
 .image {
-    width : 300px;
+    width : 50%;
     height : 550px;
     margin : 50px 191px 50px 300px;
 }
@@ -20,4 +24,34 @@
 .phoneImg {
     height : 500px;
     margin : 20px 10px 10px 20px;
+}
+
+@media screen and (max-width: 1200px) {
+   .root {
+       width : 50%;
+       
+   }
+   .image {
+       width : 50%;
+   }
+}
+
+@media screen and (max-width : 600px){
+    .container {
+        flex-flow: wrap;
+    }
+    .root {
+        height: auto;
+        width : 100%
+    }
+    
+}
+
+@media screen and (max-width : 1200px){
+    .root, .image {
+        width : 50%;
+    }
+    /* .container {
+        flex-flow: nowrap;
+    } */
 }
