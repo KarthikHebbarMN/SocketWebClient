@@ -39,6 +39,10 @@
 .personalised_img{
   height: 80vh;
 }
+.img_container{
+  background-image: cover;
+
+}
 }
 @media(min-width: 1080px){
   .personalised_heading h1{
@@ -64,6 +68,10 @@
  .personalised_img{
   
   height: 60vh;
+}
+.img_container{
+  background-image: cover;
+
 }
 }
 
