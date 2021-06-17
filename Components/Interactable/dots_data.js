@@ -2,26 +2,26 @@ const dots = [
     {
       id : 1,
       type : 'floor',
-      xPos : '200px',
-      yPos : '380px'
+      xPos : '2550%',
+      yPos : '4775%'
     },
     {
       id : 2,
       type : 'table',
-      xPos : '170px',
-      yPos : '280px'
+      xPos : '2062.5%',
+      yPos : '3550%'
     },
     {
       id : 3,
       type : 'chair',
-      xPos : '290px',
-      yPos : '310px'
+      xPos : '3612%',
+      yPos : '3837.5%'
     },
     {
       id : 4,
       type : 'tv',
-      xPos : '20px',
-      yPos : '380px'
+      xPos : '235%',
+      yPos : '4375%'
     }
 
   ]
