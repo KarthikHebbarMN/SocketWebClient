@@ -18,7 +18,7 @@ export const AwesomeChair = () => {
             <button className={styles.awesomebtn}>Buy now</button>
           </div>
         </div>
-        <div className={styles.third}>
+        {/* <div className={styles.third}>
           <div>
             <h2 className={styles.awesome1}>Awesome Chair</h2>
             <h5 className={styles.awesome2}>Rs 3,999</h5>
@@ -33,7 +33,7 @@ export const AwesomeChair = () => {
               height={500}
             />
           </div>
-        </div>
+        </div> */}
         <button className={styles.letsgo}>Let's Go</button>
       </div>
     </>

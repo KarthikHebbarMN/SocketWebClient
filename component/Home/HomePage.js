@@ -17,7 +17,7 @@ const HomePage = () => {
               eget orci at, condimentum maximus ligula. Praesent a massa augue.
               Suspendisse potenti.
             </p>
-            Visit Us To know More
+            <a href='#'>Get Started</a>
           </div>
         </div>
       </div>
