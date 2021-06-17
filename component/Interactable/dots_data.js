@@ -21,7 +21,7 @@ const dots = [
       id : 4,
       type : 'tv',
       xPos : '235%',
-      yPos : '4375%'
+      yPos : '4375%',
     }
 
   ]
