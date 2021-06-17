@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Fragment} from "react";
 import styles from "./styles.module.css";
 import { useState } from "react";
 import tab_data from "./tab_data";
@@ -10,7 +10,7 @@ const Tab = () => {
   };
 
   const tabMain = tab_data.map((val) => (
-    <>
+    <Fragment>
       <div className={styles.content_tab}>
         <div
           className={
@@ -44,7 +44,7 @@ const Tab = () => {
           </div>
         </div>
       </div>
-    </>
+    </Fragment>
   ));
   return (
     <div className={styles.tab_container}>

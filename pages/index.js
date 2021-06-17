@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import Hero from "../component/Hero/Hero";
 import Cards from "../component/cards/Cards";
 import AwesomeChair from "../component/items/AwesomeChair/AwesomeChair";
 import Navbar from "../component/Navbar/Navbar";
@@ -13,9 +12,8 @@ export const Home = () => {
   return (
     <Fragment>
       <Navbar />
-      {/* <Hero /> */}
       <HomePage />
-      <Cards />
+
       <AwesomeChair />
       <Interactable />
       <Progress />

@@ -1,9 +1,9 @@
-import React from "react";
+import React,{Fragment} from "react";
 import styles from "../cards/Cards.module.css";
 
 export const Cards = () => {
   return (
-    <>
+    <Fragment>
       <div className={styles.heading}>
         <h1>How do we stay ahead of the curve and we are different</h1>
         <div className={styles.cardss}>
@@ -54,7 +54,7 @@ export const Cards = () => {
           </div>
         </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 
