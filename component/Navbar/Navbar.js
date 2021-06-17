@@ -8,20 +8,19 @@ export const Navbar = () => {
   return (
     <>
       <div className={styles.Navbar}>
-        <a href="#">
+        <a href="" className={styles.Navicon}>
           <img src="images/Frame 3631.png" />
         </a>
-
-        <div className={styles.leftSide}>
+        <div className={styles.leftSide}></div>
+        <div className={styles.rightSide}>
           <div className={styles.links} id={showLinks ? styles.hidden : ""}>
             <a href="#">Home</a>
             <a href="#">Blog</a>
+
             <a href="#">Podcast</a>
             <a href="#">About Us</a>
             <a href="#">Contact</a>
           </div>
-        </div>
-        <div className={styles.rightSide}>
           <button className={styles.togglebtn}>
             <MenuOutlinedIcon onClick={() => setShowLinks(!showLinks)} />
           </button>

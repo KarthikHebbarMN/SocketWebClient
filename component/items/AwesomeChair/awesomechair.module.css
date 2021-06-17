@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .maindiv {
   position: relative;
   max-width: 90vw;
@@ -57,20 +58,26 @@
   margin-left: 30px;
   font-size: 15px;
   padding-top: 5%;
+  font-family: "Poppins";
 }
 
 .awesome1 {
   margin-left: 20px;
+  font-family: "Poppins";
   margin-top: 5%;
 }
 .letsgo {
   color: white;
+  width: 6em;
+  height: 2em;
   font-size: 25px;
   background-color: black;
   border: none;
   border-radius: 10px;
   margin: 5% auto;
   display: block;
+  cursor: pointer;
+  font-family: "Poppins";
 }
 .awesomebtn {
   position: relative;
@@ -82,6 +89,7 @@
   height: 33px;
   color: white;
   cursor: pointer;
+  font-family: "Poppins";
 }
 
 .awesomebtn1 {
@@ -95,7 +103,5 @@
   cursor: pointer;
   /* margin-top: 10rem; */
   margin-left: -13rem;
-}
-
-@media only screen and (max-width: 850px) {
+  font-family: "Poppins";
 }

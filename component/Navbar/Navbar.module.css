@@ -2,17 +2,18 @@
 
 .Navbar {
   width: 90%;
-  height: 80px;
+  height: 100px;
   display: flex;
   margin: auto;
 }
 .Navbar img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
+  margin-bottom: -5%;
 }
 
 .Navbar .leftSide {
-  flex: 60%;
+  flex: 30%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -22,11 +23,11 @@
   display: none;
 }
 
-.Navbar .leftSide .links {
+.Navbar .rightSide .links {
   max-height: 80px;
 }
 
-.Navbar .leftSide .links a {
+.Navbar .rightSide .links a {
   text-decoration: none;
   color: black;
   font-size: 18px;
@@ -34,12 +35,12 @@
   font-family: "Poppins", sans-serif;
 }
 
-.Navbar .leftSide .links a:hover {
+.Navbar .rightSide .links a:hover {
   color: #ffd569;
 }
 
 .Navbar .rightSide {
-  flex: 50%;
+  flex: 70%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -73,19 +74,23 @@
 }
 
 @media only screen and (max-width: 950px) {
-  .Navbar .leftSide .links a {
+  .Navbar .rightSide .links a {
     font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 900px) {
-  .Navbar .leftSide .links a {
+  .Navbar .rightSide .links a {
     font-size: 14px;
   }
 }
 
 @media only screen and (max-width: 850px) {
   .Navbar .rightSide button {
+    display: flex;
+  }
+
+  .Navicon {
     display: flex;
   }
   .Navbar .leftSide .links {
@@ -114,5 +119,8 @@
   }
   #hidden a:hover {
     color: wheat;
+  }
+  .Navbar .rightSide .links {
+    display: none;
   }
 }

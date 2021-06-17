@@ -17,6 +17,7 @@
 
 .listblock {
   float: left;
+  margin-bottom: -3.9%;
 }
 
 .listitems {
@@ -32,9 +33,10 @@
   height: 50px;
   padding-top: 20px;
   list-style: none;
-  font-size: 17px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
+  font-family: "Poppins";
 }
 
 .listblock1 {
