@@ -27,31 +27,33 @@
 }
 
 @media screen and (max-width: 1200px) {
-   .root {
-       width : 50%;
-       
-   }
-   .image {
-       width : 50%;
-   }
-}
-
-@media screen and (max-width : 600px){
-    .container {
-        flex-flow: wrap;
-    }
     .root {
-        height: auto;
-        width : 100%
+        width : 50%;
+        
     }
-    
-}
-
-@media screen and (max-width : 1200px){
-    .root, .image {
+    .image {
         width : 50%;
     }
-    /* .container {
-        flex-flow: nowrap;
-    } */
-}
+ }
+ 
+ @media screen and (max-width : 600px){
+     .container {
+         flex-flow: wrap;
+     }
+     .root {
+         height: auto;
+         width : 100%
+     }
+    .image {
+        padding-right: 150px;
+    }
+     
+ }
+ 
+ 
+ 
+ @media screen and (max-width : 375px){
+     .image {
+         margin-left: 230px;
+     }
+ }

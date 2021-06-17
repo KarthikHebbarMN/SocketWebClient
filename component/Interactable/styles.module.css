@@ -125,9 +125,17 @@
   }
 
 
+.dots {
+  position: absolute;
+  background-color:#ffffff;
+  border-radius:50%;
+  width:.5rem;
+  height:.5rem;
+  pointer-events: none;
+  box-shadow: 0rem 0rem 0.5rem .2rem #ffffff;
+}
 
-
-.tableDots {
+/* .tableDots {
   position: absolute;
   background-color:#ffffff;
   border-radius:50%;
@@ -176,4 +184,4 @@
   pointer-events: none;
   box-shadow: 0rem 0rem 0.5rem .2rem #3af8ff;
   box-shadow: 0rem 0rem 0.5rem .2rem #ffffff;
-}
+} */
