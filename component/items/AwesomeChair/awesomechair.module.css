@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 .maindiv {
   position: relative;
   max-width: 90vw;
@@ -8,12 +9,12 @@
 }
 
 .itemsdiv {
-  margin-left: 10%;
   padding-top: 2%;
-  justify-content: space-between;
-  max-width: 40vw;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 100vw;
   max-height: fit-content;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 .third {
   border-radius: 15px;
@@ -21,12 +22,17 @@
   position: absolute;
   top: 5%;
   left: 50%;
-  width: 40vw;
+  width: 50%;
+  height: fit-content;
   display: flex;
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
 }
 .first {
   position: relative;
   width: 22em;
+  margin-top: 2%;
   height: 20rem;
   background: url("/images/Rectangle151.png") no-repeat;
   background-position: center;
@@ -35,6 +41,7 @@
 
 .second {
   position: relative;
+  margin-top: 2%;
   width: 22em;
   height: 20rem;
   background: url("/images/Rectangle151.png") no-repeat;
@@ -43,7 +50,7 @@
 }
 
 .awesome2 {
-  margin-left: 2em;
+  margin-left: 20px;
 }
 
 .awesome {
@@ -51,20 +58,26 @@
   margin-left: 30px;
   font-size: 15px;
   padding-top: 5%;
+  font-family: "Poppins";
 }
 
 .awesome1 {
-  margin-left: 30px;
+  margin-left: 20px;
+  font-family: "Poppins";
   margin-top: 5%;
 }
 .letsgo {
   color: white;
+  width: 6em;
+  height: 2em;
   font-size: 25px;
   background-color: black;
   border: none;
   border-radius: 10px;
-  margin: auto;
+  margin: 5% auto;
   display: block;
+  cursor: pointer;
+  font-family: "Poppins";
 }
 .awesomebtn {
   position: relative;
@@ -76,6 +89,7 @@
   height: 33px;
   color: white;
   cursor: pointer;
+  font-family: "Poppins";
 }
 
 .awesomebtn1 {
@@ -89,23 +103,5 @@
   cursor: pointer;
   /* margin-top: 10rem; */
   margin-left: -13rem;
+  font-family: "Poppins";
 }
-
-/* @media all and (max-width: 900px) {
-  .first {
-    position: relative;
-    width: 283px;
-    height: 113px;
-    background: url("/images/Rectangle151.png") no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .second {
-    position: relative;
-    width: 283px;
-    height: 113px;
-    background: url("/images/Rectangle151.png") no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-} */
