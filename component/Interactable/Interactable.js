@@ -16,7 +16,7 @@ const Interactable = () => {
 
           <div className={styles.img_container}>
           {dots.map(dot => {
-               return <div className = {styles.dots} key = {dot.id} style = {{transform : `translate(${dot.xPos}, ${dot.yPos})`, cursor : 'pointer'}}></div>
+               return <div className = {styles.dots} key = {dot.id} style = {{top:`${dot.yPos}`,left:`${dot.xPos}`}}></div>
               
             })}
 			

@@ -11,9 +11,11 @@
   width: 100%;
 }
 .img_container{
+  position: relative;
   background-image: cover;
   padding: 2vmin;
   width: 100%;
+  max-height: 120vh;
 }
 .personalised_heading{
    display: flex;
@@ -23,7 +25,7 @@
 }
 .personalised_img{
   width: 100%;
-  height: 70%;
+  height: 100%;
   border: .6rem solid rgb(227, 230, 230);
 }
 
@@ -147,12 +149,17 @@
 
 .dots {
   position: absolute;
-  background-color:#ffffff;
+  background-color:white;
   border-radius:50%;
-  width:.5rem;
-  height:.5rem;
+  width:20px;
+  height:20px;
   pointer-events: none;
-  box-shadow: 0rem 0rem 0.5rem .2rem #ffffff;
+  box-shadow: 0rem 0rem 0.5rem .2rem teal;
+  cursor: pointer;
+}
+
+.dots:hover{
+  background-color:red;
 }
 
 /* .tableDots {
