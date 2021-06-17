@@ -11,11 +11,11 @@ export const Home = () => {
   return (
     <>
       {/* <Hero />
-      <Cards /> */}
+      <Cards />
       <Progress />
-      {/* <Items />
+      <Items /> */}
       <Interactable/>
-      <FAQ />
+      {/* <FAQ />
       <Footer /> */}
     </>
 
