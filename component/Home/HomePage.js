@@ -17,7 +17,7 @@ const HomePage = () => {
               eget orci at, condimentum maximus ligula. Praesent a massa augue.
               Suspendisse potenti.
             </p>
-            <a href='#'>Get Started</a>
+            <button className={styles.btn}>Get Started</button>
           </div>
         </div>
       </div>
