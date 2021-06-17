@@ -11,24 +11,26 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '40%',
-    paddingTop : '100px',
-    paddingLeft : '70px',
-    paddingRight : '35px',
-    paddingBottom : '35px',  
-    height : '60vh', 
+    // width: '40%',
+    // paddingTop : '100px',
+    // paddingLeft : '70px',
+    // paddingRight : '35px',
+    // paddingBottom : '35px',  
+    // height : '60vh', 
   },
   button: {
     marginTop: theme.spacing(1),
     marginRight: theme.spacing(1),
-    
+    backgroundColor : '#343A40',
+    color : '#fff'
   },
   actionsContainer: {
-    paddingTop : '10px',
+    padding : '10px',
     marginBottom: theme.spacing(2),
   },
   resetContainer: {
     padding: theme.spacing(3),
+    backgroundColor : 'transparent'
   }
 
 }));
@@ -71,21 +73,22 @@ export default function Progress() {
   
   return (
       <div className = {styles.container}>
-        <div className={classes.root} >
+        <div className={styles.root} >
       <Stepper activeStep={activeStep} orientation="vertical" style = {{backgroundColor : "transparent"}}>
         {steps.map((label, index) => {
           let props = {};
           let labelProps = {};
-          labelProps.icon = <div style={{ backgroundColor: '#3f51b5', color : '#fff', width: '11px', padding: '18px', textAlign: 'center', height: '11px', fontSize: '16px', borderRadius: '50%' }}>{index}</div>
+          labelProps.icon = <div style={{ backgroundColor: '#343A40', color : '#fff', borderRadius :'50%',height : '35px', width : '35px', lineHeight : '35px', textAlign : 'center'}}>{index}</div>
           return (<Step key={label}{...props}>
             <StepLabel {...labelProps}>{label}</StepLabel>
             <StepContent>
               <Typography>{getStepContent(index)}</Typography>
-              <div className={classes.actionsContainer}>
+              <div className={classes.actionsContainer} >
                 <div>
                   <Button
                     disabled={activeStep === 0}
                     variant = "contained"
+                  
                     onClick={handleBack}
                     className={classes.button}
                   >
@@ -95,6 +98,7 @@ export default function Progress() {
                     variant="contained"
                     color="primary"
                     onClick={handleNext}
+                    style = {{backgroundColor : "#343A40"}}
                     className={classes.button}
                   >
                     {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
@@ -109,7 +113,7 @@ export default function Progress() {
       {activeStep === steps.length && (
         <Paper square elevation={0} className={classes.resetContainer}>
           <Typography>All steps completed - you&apos;re finished</Typography>
-          <Button onClick={handleReset} className={classes.button}>
+          <Button onClick={handleReset} className={classes.button} style = {{backgroundColor : '#343A40'}}>
             Reset
           </Button>
         </Paper>

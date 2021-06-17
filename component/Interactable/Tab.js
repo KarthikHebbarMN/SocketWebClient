@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.css";
 import { useState } from "react";
 import tab_data from "./tab_data";
+
 const Tab = () => {
   const [toggleState, setToggleState] = useState(1);
   const toggleTab = (index) => {
@@ -17,13 +18,28 @@ const Tab = () => {
           }>
           <div className={styles.list_main}>
             <div className={styles.list}>
-              <img className={styles.item_img} src={val.img1} alt='img'></img>
+              <div className={styles.product_img}>
+                <img className={styles.item_img} src={val.img1} alt='img'></img>
+              </div>
+              <div className={styles.product_details}>
+                <p></p>
+              </div>
             </div>
             <div className={styles.list}>
-              <img className={styles.item_img} src={val.img2} alt='img'></img>
+              <div className={styles.product_img}>
+                <img className={styles.item_img} src={val.img2} alt='img'></img>
+              </div>
+              <div className={styles.product_details}>
+                <p></p>
+              </div>
             </div>
             <div className={styles.list}>
-              <img className={styles.item_img} src={val.img3} alt='img'></img>
+              <div className={styles.product_img}>
+                <img className={styles.item_img} src={val.img3} alt='img'></img>
+              </div>
+              <div className={styles.product_details}>
+                <p></p>
+              </div>
             </div>
           </div>
         </div>
@@ -33,11 +49,12 @@ const Tab = () => {
   return (
     <div className={styles.tab_container}>
       <div className={styles.bloc_tabs}>
-        <button
+        <img
+          src=''
+          alt='img'
           className={toggleState === 1 ? styles.active_tabs : styles.tabs}
-          onClick={() => toggleTab(1)}>
-          Floor
-        </button>
+          onClick={() => toggleTab(1)}></img>
+
         <button
           className={toggleState === 2 ? styles.active_tabs : styles.tabs}
           onClick={() => toggleTab(2)}>
