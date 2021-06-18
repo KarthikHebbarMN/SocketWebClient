@@ -8,17 +8,20 @@
     flex-flow: nowrap;
 }
 
-
 .root {
     width : 50%;
     height : 60vh;
     padding : 100px 35px 35px 70px;
 }
 
+.para {
+    padding-bottom: 5px;
+}
+
 .image {
-    width : 50%;
+    width : 30%;
     height : 550px;
-    margin : 50px 191px 50px 300px;
+    margin : 50px 80px 50px 100px;
 }
 
 .phoneImg {
@@ -54,7 +57,7 @@
  
  @media screen and (max-width : 375px){
      .image {
-         margin-left: 230px;
+         margin-left: 110px;
          margin-top : 80px;
      }
      .root {
