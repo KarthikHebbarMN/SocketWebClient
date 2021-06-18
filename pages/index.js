@@ -11,14 +11,14 @@ import HomePage from "../component/Home/HomePage";
 export const Home = () => {
   return (
     <Fragment>
-      <Navbar />
+      {/* <Navbar />
       <HomePage />
 
-      <AwesomeChair />
+      <AwesomeChair /> */}
       <Interactable />
-      <Progress />
+      {/* <Progress />
       <FAQ />
-      <Footer />
+      <Footer /> */}
     </Fragment>
   );
 };
