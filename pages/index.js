@@ -12,15 +12,15 @@ import HomePage from "../component/Home/HomePage";
 export const Home = () => {
   return (
     <Fragment>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <Hero /> */}
-      <HomePage />
+      {/* <HomePage />
       <Cards />
       <AwesomeChair />
-      <Interactable />
+      <Interactable /> */}
       <Progress />
-      <FAQ />
-      <Footer />
+      {/* <FAQ />
+      <Footer /> */}
     </Fragment>
   );
 };
