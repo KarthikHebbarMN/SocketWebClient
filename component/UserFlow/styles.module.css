@@ -55,9 +55,11 @@
  @media screen and (max-width : 375px){
      .image {
          margin-left: 230px;
+         margin-top : 80px;
      }
      .root {
          width : 100%;
          padding-left: 20px;
+         padding-top: 30px;
      }
  }
