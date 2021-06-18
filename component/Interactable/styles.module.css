@@ -151,15 +151,19 @@
   position: absolute;
   background-color:white;
   border-radius:50%;
-  width:20px;
-  height:20px;
-  pointer-events: none;
-  box-shadow: 0rem 0rem 0.5rem .2rem teal;
+  width:10px;
+  height:10px;
+  transition: width ease 0.5s, height ease 0.5s, box-shadow;
+  box-shadow: 0rem 0rem 0.5rem .1rem seashell;
   cursor: pointer;
 }
 
+.img_container:hover > .dots{
+  height:20px;
+  width: 20px;
+}
 .dots:hover{
-  background-color:red;
+  box-shadow: 0rem 0rem 0.5rem .2rem teal;
 }
 
 /* .tableDots {
