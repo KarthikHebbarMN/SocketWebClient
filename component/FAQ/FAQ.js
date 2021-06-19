@@ -10,7 +10,7 @@ export const FAQ = () => {
         <div className={styles.list1}>
           <ul className={styles.listblock}>
             <li className={styles.listitems}>
-              Duis aute irure dolor in reprehenderit in voluptate velit?{" "}
+              Duis aute irure dolor in reprehenderit in voluptate velit?
               <a href="" className={styles.arrow}>
                 <ArrowForwardIosIcon />
               </a>
