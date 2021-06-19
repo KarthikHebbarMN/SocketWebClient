@@ -22,9 +22,6 @@ export const Cards = () => {
 
   const renderCard = (card, index) => {
     return (
-      // <div className={styles.heading}>
-      //
-
       <div className={styles.cardss} key={index}>
         <div className={styles.card}>
           <img src={card.image} width="100%" alt="Avatar" />
