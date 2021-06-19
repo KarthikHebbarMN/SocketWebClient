@@ -1,9 +1,9 @@
-import React from "react";
+import React,{Fragment} from "react";
 import styles from "../Letsbuild/letsbuild.module.css";
 
 export const LetsBuild = () => {
   return (
-    <>
+    <Fragment>
       <div className={styles.banner}>
         <div className={styles.innerbanner}>
           <div className={styles.searchbarbanner}>
@@ -19,7 +19,7 @@ export const LetsBuild = () => {
           </div>
         </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 

@@ -8,17 +8,20 @@
     flex-flow: nowrap;
 }
 
-
 .root {
     width : 50%;
     height : 60vh;
     padding : 100px 35px 35px 70px;
 }
 
+.para {
+    padding-bottom: 5px;
+}
+
 .image {
-    width : 50%;
+    width : 30%;
     height : 550px;
-    margin : 50px 191px 50px 300px;
+    margin : 50px 80px 50px 100px;
 }
 
 .phoneImg {
@@ -27,31 +30,39 @@
 }
 
 @media screen and (max-width: 1200px) {
-   .root {
-       width : 50%;
-       
-   }
-   .image {
-       width : 50%;
-   }
-}
-
-@media screen and (max-width : 600px){
-    .container {
-        flex-flow: wrap;
-    }
     .root {
-        height: auto;
-        width : 100%
+        width : 50%;
+        
     }
-    
-}
-
-@media screen and (max-width : 1200px){
-    .root, .image {
+    .image {
         width : 50%;
     }
-    /* .container {
-        flex-flow: nowrap;
-    } */
-}
+ }
+ 
+ @media screen and (max-width : 768px){
+     .container {
+         flex-flow: wrap;
+     }
+     .root {
+         height: auto;
+         width : 100%
+     }
+    .image {
+        padding-right: 150px;
+    }
+     
+ }
+ 
+ 
+ 
+ @media screen and (max-width : 375px){
+     .image {
+         margin-left: 110px;
+         margin-top : 80px;
+     }
+     .root {
+         width : 100%;
+         padding-left: 20px;
+         padding-top: 30px;
+     }
+ }

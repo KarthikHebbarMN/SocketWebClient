@@ -1,5 +1,6 @@
 import styles from "./styles.module.css";
 import Tab from "./Tab";
+import dots from './dots_data'
 
 const Interactable = () => {
   return (
@@ -14,10 +15,11 @@ const Interactable = () => {
           </div>
 
           <div className={styles.img_container}>
-            <div className={styles.tableDots}></div>
-            <div className={styles.chairDots}></div>
-            <div className={styles.floorDots}></div>
-            <div className={styles.tvDots}></div>
+          {dots.map(dot => {
+               return <div className = {styles.dots} key = {dot.id} style = {{top:`${dot.yPos}`,left:`${dot.xPos}`}}></div>
+              
+            })}
+			
 
             <img
               className={styles.personalised_img}

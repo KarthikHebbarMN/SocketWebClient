@@ -1,4 +1,4 @@
-import React from "react";
+import React,{Fragment} from "react";
 import styles from "./styles.module.css";
 import { useState } from "react";
 import tab_data from "./tab_data";
@@ -10,7 +10,7 @@ const Tab = () => {
   };
 
   const tabMain = tab_data.map((val) => (
-    <>
+    <Fragment>
       <div className={styles.content_tab}>
         <div
           className={
@@ -44,16 +44,16 @@ const Tab = () => {
           </div>
         </div>
       </div>
-    </>
+    </Fragment>
   ));
   return (
     <div className={styles.tab_container}>
       <div className={styles.bloc_tabs}>
-        <img
-          src=''
-          alt='img'
+        <button
           className={toggleState === 1 ? styles.active_tabs : styles.tabs}
-          onClick={() => toggleTab(1)}></img>
+          onClick={() => toggleTab(1)}>
+          Floor
+        </button>
 
         <button
           className={toggleState === 2 ? styles.active_tabs : styles.tabs}
@@ -68,7 +68,7 @@ const Tab = () => {
         <button
           className={toggleState === 4 ? styles.active_tabs : styles.tabs}
           onClick={() => toggleTab(4)}>
-          TV
+          Wallpaper
         </button>
       </div>
       {tabMain}
