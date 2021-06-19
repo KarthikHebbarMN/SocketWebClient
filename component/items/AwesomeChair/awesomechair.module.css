@@ -35,25 +35,27 @@
   margin-left: 10%;
 }
 
-.second {
-  position: relative;
-  margin-top: 2%;
-  width: 22em;
-  height: 20rem;
-  background: url("/images/Rectangle151.png") no-repeat;
-  background-size: 100% auto;
-  background-position: center;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  background-color: #fff2f2;
-}
-
 .awesome1 {
   margin-left: 30px;
   font-size: 15px;
 
   font-family: "Poppins";
   color: #00b432;
+}
+
+@media (max-width: 370px) {
+  .first {
+    width: 18em;
+    margin: 10%;
+  }
+  .first h2 {
+    margin-left: 1rem;
+    padding-top: 21%;
+    font-size: 14px;
+  }
+  .awesomebtn {
+    margin-left: 1rem;
+  }
 }
 .awesome {
   padding-top: 15%;

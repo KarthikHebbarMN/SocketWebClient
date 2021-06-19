@@ -26,9 +26,7 @@ export const Cards = () => {
         <div className={styles.card}>
           <img src={card.image} width="100%" alt="Avatar" />
           <div className={styles.container}>
-            <h4>
-              <h5 className={styles.bheading}>{card.title}</h5>
-            </h4>
+            <h5 className={styles.bheading}>{card.title}</h5>
             <p className={styles.cardp}>{card.text}</p>
             <a href="#">Learn more</a>
           </div>

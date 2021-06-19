@@ -1,19 +1,22 @@
-import React,{Fragment} from "react";
-import Meta from '../seo/Meta'
+import React, { Fragment } from "react";
+import Meta from "../seo/Meta";
 import styles from "./HomePage.module.css";
 const HomePage = () => {
   return (
     <Fragment>
       <div className={styles.header}>
         <div className={styles.container}>
-          <div class={styles.text_box}>
+          <div className={styles.text_box}>
             <h1>
               Refine the tone
               <br /> of your space
             </h1>
-            <Meta title="Refine the tone" desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            <Meta
+              title="Refine the tone"
+              desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             cursus efficitur massa, eget porttitor ante malesuada ut. Vivamus
-            interdum rhoncus velit at bibendum. Nunc augue tellus"/>
+            interdum rhoncus velit at bibendum. Nunc augue tellus"
+            />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               cursus efficitur massa, eget porttitor ante malesuada ut. Vivamus
