@@ -1,24 +1,29 @@
-import React from "react";
-import Hero from "../components/Hero/Hero";
-import Cards from "../components/cards/Cards";
-import Items from "../components/items/Items";
-import Interactable from "../components/Interactable/Interactable";
-import FAQ from "../components/FAQ/FAQ";
-import Footer from "../components/Footer/Footer";
-import Progress from '../Components/Userflow/progress'
+import React, { Fragment } from "react";
+
+import Ecommerce from "../component/items/AwesomeChair/Ecommerce";
+
+import Navbar from "../component/Navbar/Navbar";
+
+import FAQ from "../component/FAQ/FAQ";
+import Footer from "../component/Footer/Footer";
+import Progress from "../component/UserFlow";
+import Interactable from "../component/Interactable/Interactable";
+
+import HomePage from "../component/Home/HomePage";
+import DynamicCard from "../component/cards/DynamicCard";
 
 export const Home = () => {
   return (
-    <>
-      {/* <Hero />
-      <Cards />
+    <Fragment>
+      <Navbar />
+      <HomePage />
+      <DynamicCard />
+      <Ecommerce />
+      <Interactable />
       <Progress />
-      <Items /> */}
-      <Interactable/>
-      {/* <FAQ />
-      <Footer /> */}
-    </>
-
+      <FAQ />
+      <Footer />
+    </Fragment>
   );
 };
 

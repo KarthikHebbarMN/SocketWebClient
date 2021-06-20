@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.Navbar {
+  width: 90%;
+  height: 100px;
+  display: flex;
+  margin: auto;
+}
+.Navbar img {
+  width: 100px;
+  height: 100px;
+}
+
+.Navbar .leftSide {
+  flex: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Navbar .rightSide button {
+  display: none;
+}
+
+.Navbar .rightSide .links {
+  max-height: 80px;
+}
+
+.Navbar .rightSide .links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  margin-left: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.Navbar .rightSide .links a:hover {
+  color: #ffd569;
+}
+
+.Navbar .rightSide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.btn {
+  background: #ffd569;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+}
+
+.btn1 {
+  color: black;
+  background: white;
+  border-radius: 15px;
+  outline: none;
+  border-radius: none;
+  border: none;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+.menu {
+  background-color: transparent;
+}
+
+.togglebtn {
+  background: transparent;
+  border: none;
+}
+
+@media only screen and (max-width: 950px) {
+  .Navbar .rightSide .links a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Navbar .rightSide .links a {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .Navbar .rightSide button {
+    display: flex;
+  }
+
+  .Navicon {
+    display: flex;
+  }
+  .Navbar .leftSide .links {
+    display: none;
+  }
+  #hidden {
+    position: absolute;
+    top: 80px;
+    max-height: fit-content;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    background-color: #fffaed;
+    border-radius: 17px;
+    z-index: 1;
+    flex-direction: column;
+  }
+  #hidden a {
+    margin: 10px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  #hidden a:hover {
+    color: wheat;
+  }
+  .Navbar .rightSide .links {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #hidden {
+    margin-left: 2.6%;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  #hidden {
+    left: 7%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #hidden {
+    left: 9%;
+  }
+}

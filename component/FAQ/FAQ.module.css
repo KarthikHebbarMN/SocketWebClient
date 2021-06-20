@@ -1,21 +1,23 @@
 .faq {
-  position: absolute;
-
-  top: 5000px;
-  width: 1310px;
-  height: 700px;
-  background-color: #ffffff;
+  position: relative;
+  width: 90%;
+  height: fit-content;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .faqheading {
-  position: absolute;
-  left: 35%;
+  justify-content: center;
+  text-align: center;
+  margin-top: 6em;
   color: black;
+  display: flex;
 }
 
 .listblock {
-  position: absolute;
-  top: 100px;
+  float: left;
+  margin-bottom: -2.9%;
 }
 
 .listitems {
@@ -24,26 +26,21 @@
   justify-content: center;
   text-align: center;
   margin: 5px auto;
-  width: 540px;
-  height: 70px;
-  padding-top: 45px;
-  background-color: #9a9a9a;
-  width: 540px;
-  height: 70px;
-  padding-top: 45px;
+  margin-left: 20px;
+  padding-top: 2px;
+  background-color: #333333;
+  width: 100%;
+  height: 50px;
+  padding-top: 20px;
   list-style: none;
-  font-family: Roboto;
-  font-size: 19px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0.4444444477558136px;
+  font-family: "Poppins";
 }
 
 .listblock1 {
-  position: absolute;
-  top: 100px;
-  left: 650px;
+  float: right;
 }
 
 .arrow {
@@ -51,4 +48,10 @@
   text-align: right;
   justify-content: center;
   margin-left: 50px;
+}
+
+@media only screen and (max-width: 850px) {
+  .listitems {
+    font-size: 14px;
+  }
 }

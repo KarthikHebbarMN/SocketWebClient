@@ -1,29 +1,28 @@
 const dots = [
-    {
-      id : 1,
-      type : 'floor',
-      xPos : '2550%',
-      yPos : '4775%'
-    },
-    {
-      id : 2,
-      type : 'table',
-      xPos : '2062.5%',
-      yPos : '3550%'
-    },
-    {
-      id : 3,
-      type : 'chair',
-      xPos : '3612%',
-      yPos : '3837.5%'
-    },
-    {
-      id : 4,
-      type : 'tv',
-      xPos : '235%',
-      yPos : '4375%',
-    }
+  {
+    id: 1,
+    type: "floor",
+    xPos: "25%",
+    yPos: "75%",
+  },
+  {
+    id: 2,
+    type: "table",
+    xPos: "89%",
+    yPos: "60%",
+  },
+  {
+    id: 3,
+    type: "chair",
+    xPos: "60%",
+    yPos: "60.5%",
+  },
+  {
+    id: 4,
+    type: "Wallpaper",
+    xPos: "15%",
+    yPos: "38%",
+  },
+];
 
-  ]
-
-  export default dots;
+export default dots;

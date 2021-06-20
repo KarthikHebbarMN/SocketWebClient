@@ -1,7 +1,8 @@
-import React from "react";
+import React,{Fragment} from "react";
 import styles from "./styles.module.css";
 import { useState } from "react";
 import tab_data from "./tab_data";
+
 const Tab = () => {
   const [toggleState, setToggleState] = useState(1);
   const toggleTab = (index) => {
@@ -9,7 +10,7 @@ const Tab = () => {
   };
 
   const tabMain = tab_data.map((val) => (
-    <>
+    <Fragment>
       <div className={styles.content_tab}>
         <div
           className={
@@ -17,18 +18,33 @@ const Tab = () => {
           }>
           <div className={styles.list_main}>
             <div className={styles.list}>
-              <img className={styles.item_img} src={val.img1} alt='img'></img>
+              <div className={styles.product_img}>
+                <img className={styles.item_img} src={val.img1} alt='img'></img>
+              </div>
+              <div className={styles.product_details}>
+                <p></p>
+              </div>
             </div>
             <div className={styles.list}>
-              <img className={styles.item_img} src={val.img2} alt='img'></img>
+              <div className={styles.product_img}>
+                <img className={styles.item_img} src={val.img2} alt='img'></img>
+              </div>
+              <div className={styles.product_details}>
+                <p></p>
+              </div>
             </div>
             <div className={styles.list}>
-              <img className={styles.item_img} src={val.img3} alt='img'></img>
+              <div className={styles.product_img}>
+                <img className={styles.item_img} src={val.img3} alt='img'></img>
+              </div>
+              <div className={styles.product_details}>
+                <p></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </Fragment>
   ));
   return (
     <div className={styles.tab_container}>
@@ -38,6 +54,7 @@ const Tab = () => {
           onClick={() => toggleTab(1)}>
           Floor
         </button>
+
         <button
           className={toggleState === 2 ? styles.active_tabs : styles.tabs}
           onClick={() => toggleTab(2)}>
@@ -51,7 +68,7 @@ const Tab = () => {
         <button
           className={toggleState === 4 ? styles.active_tabs : styles.tabs}
           onClick={() => toggleTab(4)}>
-          TV
+          Wallpaper
         </button>
       </div>
       {tabMain}
