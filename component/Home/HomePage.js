@@ -7,6 +7,7 @@ const HomePage = () => {
       <div className={styles.header}>
         <div className={styles.container}>
           <div class={styles.text_box}>
+          <img src="https://larcel-image-storage.s3.ap-south-1.amazonaws.com/BlackMarble_Wall_.jpg"/>
             <h1>
               Refine the tone
               <br /> of your space
