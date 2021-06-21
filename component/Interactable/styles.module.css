@@ -85,6 +85,9 @@
     display: flex;
     
     }
+    .list:hover{
+      border: .10rem solid black;
+    }
 .item_img{
     height: 100%;
     width: 100%;   
@@ -95,18 +98,36 @@
     background-image: cover;
   }
 .product_details{ 
-    width: 80%;
+    width: 65%;
+    margin-left: 2rem;
+  }
+  .product_details h3{
+    margin: .5rem 0 0 0;  
+  }
+  .product_details p{
+    margin: .3rem 0.7rem 0.3rem 0rem;  
   }
 
-
+  .product_star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;  
+  }
   /* ---Tab.js css--- */
 .tab{
     display: flex; 
   }
 .tab_container {
       display: block;
-      margin-right: 3.5rem;
+      margin-right: 1.5rem;
     }
+@media(min-width: 700px){
+  .tab_container {
+    display: block;
+    margin-right: .5rem;
+  }
+}
 .bloc_tabs{
   display: flex;
     justify-content: space-between;
@@ -117,10 +138,8 @@
     height: 5rem;
     width: 5rem;
     margin:.5rem;
-    /* background:#ffc3c3 ; */
     cursor: pointer;
     outline: none;
-    /* border-radius: .5rem; */
     border: .05rem solid #333232;
   }
 .active_tabs  {
@@ -147,6 +166,10 @@
   }
 
 
+
+
+
+
 .dots {
   position: absolute;
   background-color:white;
@@ -165,54 +188,3 @@
 .dots:hover{
   box-shadow: 0rem 0rem 0.5rem .2rem teal;
 }
-
-/* .tableDots {
-  position: absolute;
-  background-color:#ffffff;
-  border-radius:50%;
-  width:.5rem;
-  height:.5rem;
-  transform: translate(170px, 280px);
-  pointer-events: none;
-  box-shadow: 0rem 0rem 0.5rem .2rem #ffffff;
-}
-
-
-.chairDots {
-  position: absolute;
- 
-  background-color:#ffffff;
-  border-radius:50%;
-  width:.5rem;
-  height:.5rem;
-  transform: translate(290px, 310px);
-  pointer-events: none;
-  
-  box-shadow: 0rem 0rem 0.5rem .2rem #ffffff;
-}
-
-.floorDots{
-  position: absolute;
-
-  background-color:#ffffff;
-  border-radius:50%;
-  width:.5rem;
-  height:.5rem;
-  transform: translate(200px, 380px);
-  pointer-events: none;
-
-  box-shadow: 0rem 0rem 0.5rem .2rem #ffffff;
-}
-
-.tvDots {
-  position: absolute;
- 
-  background-color:#ffffff;
-  border-radius:50%;
-  width:.5rem;
-  height:.5rem;
-  transform: translate(20px, 380px);
-  pointer-events: none;
-  
-  box-shadow: 0rem 0rem 0.5rem .2rem #ffffff;
-} */

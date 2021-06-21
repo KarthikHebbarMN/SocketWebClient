@@ -95,7 +95,6 @@
         width: 80%;
         top: 30%;
         left: 20%; 
-        /* margin-right: 13rem; */
     }
 }
 @media(max-width: 700px){
@@ -137,7 +136,7 @@
   .btn {
     position: relative;
     border-radius: 5px;
-    background: #161616;
+    background: #161616; 
     border: none;
     outline: none;
     width: 101px;
@@ -145,4 +144,10 @@
     color: white;
     cursor: pointer;
     font-family: "Poppins";
+  }
+  .btn:hover{
+    /* background: #444444; 
+    background: #343A40; */
+    background: #000000;
+    transform: scale(1.01);
   }
