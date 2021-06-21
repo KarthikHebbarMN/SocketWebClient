@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  
+
 }
 .faqheading {
   justify-content: center;
@@ -14,8 +14,9 @@
   margin-top: 6em;
   color: black;
   display: flex;
+
   font-family: "Roboto", sans-serif;
-  
+
 }
 
 .listblock {
@@ -39,8 +40,10 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
+
   font-family: "Roboto", sans-serif;
   letter-spacing: 1px;
+
 }
 
 .listblock1 {
