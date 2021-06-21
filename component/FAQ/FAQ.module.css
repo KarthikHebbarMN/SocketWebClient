@@ -6,6 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 5% auto;
 }
 .faqheading {
   justify-content: center;
@@ -15,43 +16,20 @@
   display: flex;
 }
 
-.listblock {
-  float: left;
-  margin-bottom: -2.9%;
+.accord {
+  margin-bottom: 10px;
 }
 
-.listitems {
-  border-radius: 5px;
-  color: white;
-  justify-content: center;
-  text-align: center;
-  margin: 5px auto;
-  margin-left: 20px;
-  padding-top: 2px;
-  background-color: #333333;
-  width: 100%;
-  height: 50px;
-  padding-top: 20px;
-  list-style: none;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  font-family: "Poppins";
+.list1 {
+  width: 30rem;
+  margin-right: 5%;
+  margin-bottom: 2%;
+
+  /* float: left;
+  margin-bottom: -2.9%; */
 }
 
-.listblock1 {
-  float: right;
-}
-
-.arrow {
-  color: #ffffff;
-  text-align: right;
-  justify-content: center;
-  margin-left: 50px;
-}
-
-@media only screen and (max-width: 850px) {
-  .listitems {
-    font-size: 14px;
-  }
+.list2 {
+  width: 30rem;
+  margin-right: 5%;
 }
