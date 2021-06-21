@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
 .heading {
   position: relative;
   text-align: center;
@@ -7,11 +7,11 @@
   height: fit-content;
   margin: 5% auto;
   text-align: center;
-  font-family: "Playfair Display";
   font-style: normal;
   font-size: 56px;
   line-height: 111.9%;
   font-weight: normal;
+  font-family: 'Roboto', sans-serif;
 }
 
 .cardss img {
@@ -52,11 +52,14 @@
   margin-left: 1rem;
   text-align: justify;
   margin-right: 1rem;
-  font-family: Poppins;
+  font-family: 'Roboto', sans-serif;
   font-size: 12px;
+  line-height: 1rem;
+  letter-spacing: 0.8px;
 }
 .bheading {
   margin-left: 2rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 583px) {
@@ -115,7 +118,7 @@
 
 .container a {
   display: flex;
-  font-family: Poppins;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
