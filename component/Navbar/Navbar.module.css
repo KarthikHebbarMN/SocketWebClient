@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .Navbar {
-  width: 90%;
+  width: 95%;
   height: 100px;
   display: flex;
   margin: auto;
 }
 .Navbar img {
+  margin-left: 20%;
   width: 100px;
   height: 100px;
 }

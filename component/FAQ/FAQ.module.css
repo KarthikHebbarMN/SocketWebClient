@@ -1,19 +1,42 @@
 .faq {
   position: relative;
-  width: 90%;
+  width: 100vw;
   height: fit-content;
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 5% auto;
+  margin: 2rem;
 }
 .faqheading {
-  justify-content: center;
+  position: relative;
   text-align: center;
-  margin-top: 6em;
-  color: black;
-  display: flex;
+  height: fit-content;
+  justify-content: center;
+}
+
+@media (max-width: 320px) {
+  .faqheading {
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 375px) {
+  .faqheading {
+    margin-left: 14%;
+  }
+}
+
+@media (max-width: 768px) {
+  .faqheading {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 425px) {
+  .faqheading {
+    margin-left: 10%;
+  }
 }
 
 .accord {
@@ -23,7 +46,7 @@
 .list1 {
   width: 30rem;
   margin-right: 5%;
-  margin-bottom: 2%;
+  margin-bottom: 0.1%;
 
   /* float: left;
   margin-bottom: -2.9%; */

@@ -1,12 +1,14 @@
-.footerr {
-  /* position: relative; */
-  max-height: fit-content;
-  max-width: 100%;
-}
 .container {
-  position: relative;
-  width: 100%;
-  max-height: fit-content;
+  max-width: 100%;
+  height: fit-content;
+}
+
+.footer {
+  max-width: 100%;
+
+  display: flex;
+  background-color: black;
+  padding: 50px 0;
 }
 .row {
   justify-content: space-evenly;
@@ -18,12 +20,7 @@
 .ul {
   list-style: none;
 }
-.footer {
-  display: flex;
 
-  background-color: black;
-  padding: 50px 0;
-}
 .footercol {
   display: flex;
 }
@@ -31,13 +28,10 @@
   font-size: 18px;
   color: #ffffff;
   margin-bottom: 35px;
-  font-weight: 500;
-  /* position: relative; */
 }
 
 .listitems {
   list-style: none;
-  /* margin-right: 3%; */
   padding-top: 5%;
 }
 
