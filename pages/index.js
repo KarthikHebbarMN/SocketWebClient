@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-
+import '../component/styles.module.css'
 import Ecommerce from "../component/items/AwesomeChair/Ecommerce";
 
 import Navbar from "../component/Navbar/Navbar";

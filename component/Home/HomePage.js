@@ -12,10 +12,10 @@ const HomePage = () => {
               <br /> of your space
             </h1>
             <Meta
-              title="Refine the tone"
-              desc=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              title='Refine the tone'
+              desc=' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             cursus efficitur massa, eget porttitor ante malesuada ut. Vivamus
-            interdum rhoncus velit at bibendum. Nunc augue tellus"
+            interdum rhoncus velit at bibendum. Nunc augue tellus'
             />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
