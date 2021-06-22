@@ -18,11 +18,18 @@ const useStyles = makeStyles((theme) => ({
     // paddingBottom : '35px',
     // height : '60vh',
   },
+ 
+  Typography : {
+    fontFamily : "Roboto",
+    fontSize : '18px',
+    paddingBottom: '10px'
+  },
   button: {
     marginTop: theme.spacing(1),
     marginRight: theme.spacing(1),
     backgroundColor: "#343A40",
     color: "#fff",
+    fontFamily : "Roboto"
   },
   actionsContainer: {
     padding: "10px",
@@ -94,10 +101,10 @@ export default function Progress() {
               </div>
             );
             return (
-              <Step key={label} {...props}>
-                <StepLabel {...labelProps}>{label}</StepLabel>
+              <Step key={label} {...props} >
+                <StepLabel {...labelProps} className = {styles.title}>{label}</StepLabel>
                 <StepContent>
-                  <Typography className = {styles.para}>{getStepContent(index)}</Typography>
+                  <Typography className = {classes.Typography}>{getStepContent(index)}</Typography>
                   <div className={classes.actionsContainer}>
                     <div>
                       <Button
