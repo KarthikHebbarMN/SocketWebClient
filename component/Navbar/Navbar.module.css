@@ -9,7 +9,6 @@
 .Navbar img {
   width: 100px;
   height: 100px;
-  margin-bottom: -5%;
 }
 
 .Navbar .leftSide {
@@ -40,7 +39,6 @@
 }
 
 .Navbar .rightSide {
-  flex: 70%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -97,20 +95,18 @@
     display: none;
   }
   #hidden {
-    position: fixed;
-    left: 6%;
+    position: absolute;
     top: 80px;
-    height: fit-content;
     max-height: fit-content;
-    width: 88%;
+    margin: auto;
+    width: 90%;
     display: flex;
     flex-flow: wrap;
-    flex-direction: column;
-    margin: auto;
     align-items: center;
     background-color: #fffaed;
     border-radius: 17px;
     z-index: 1;
+    flex-direction: column;
   }
   #hidden a {
     margin: 10px;
@@ -122,5 +118,23 @@
   }
   .Navbar .rightSide .links {
     display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #hidden {
+    margin-left: 2.6%;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  #hidden {
+    left: 7%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #hidden {
+    left: 9%;
   }
 }

@@ -1,60 +1,105 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-.heading h1 {
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
+.heading {
   position: relative;
   text-align: center;
-  width: 60vw;
+  width: 70vw;
   height: fit-content;
-  /* width: 50%; */
-  margin: 5rem auto;
+  margin: 5% auto;
   text-align: center;
-  font-family: "Playfair Display";
   font-style: normal;
   font-size: 56px;
   line-height: 111.9%;
   font-weight: normal;
+  font-family: 'Roboto', sans-serif;
 }
 
-.cardss {
-  padding: 5px auto;
-  flex-wrap: wrap;
-  width: 100vw;
+.cardss img {
+  width: 100%;
+  height: 25vh;
+  border-radius: 15px 15px 0 0;
+}
+
+.container {
+  position: relative;
+  width: 100%;
   height: fit-content;
-  display: flex;
+  display: inline-block;
+}
+.cardss {
+  width: fit-content;
+  display: inline-block;
+  align-items: center;
+  padding-top: 2%;
   justify-content: space-evenly;
+  max-width: 100vw;
+  margin: 2%;
+  z-index: 1;
 }
 
 .card {
-  margin-top: 15px;
-  background: #fffaed;
   position: relative;
-  width: 314px;
-  height: 318px;
+  width: 20rem;
+  margin-top: 2%;
+  height: fit-content;
+  border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  justify-content: center;
+  background-color: #fffbfb;
+  margin-left: 30%;
 }
 
-.card2 {
-  margin-top: 15px;
-  background: #fffaed;
-  position: relative;
-  width: 314px;
-  height: 318px;
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+.cardp {
+  margin-left: 1rem;
+  text-align: justify;
+  margin-right: 1rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 1rem;
+  letter-spacing: 0.8px;
+}
+.bheading {
+  margin-left: 2rem;
+  font-family: 'Roboto', sans-serif;
 }
 
-.card3 {
-  margin-top: 15px;
-  background: #fffaed;
-  position: relative;
-  width: 314px;
-  height: 318px;
+@media (max-width: 583px) {
+  .card {
+    width: 90%;
+  }
+  .heading {
+    font-size: 50px;
+  }
+}
 
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+@media (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media (max-width: 360px) {
+  .card {
+    background: #fffaed;
+    width: 80%;
+    margin-left: 15%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  .cardss {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+  }
+  .heading {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 850px) {
+  .heading h1 {
+    font-size: 30px;
+    margin-top: -3%;
+    margin-bottom: 10px;
+  }
 }
 
 .card:hover {
@@ -62,74 +107,23 @@
   cursor: pointer;
 }
 
-.card2:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-.card3:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-.container h4 {
-  position: absolute;
-  width: 164px;
-  height: 26px;
-  left: 20px;
-  top: 40px;
-
+.container h5 {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
   line-height: 25px;
-}
-
-.cardp {
-  position: relative;
-  width: 275px;
-  height: 85px;
-  left: 20px;
-  top: 100px;
-  font-family: Poppins;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 13px;
+  margin-left: 1rem;
 }
 
 .container a {
-  position: relative;
   display: flex;
-  top: 150px;
-  left: 20px;
-  font-family: Poppins;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
-}
-
-@media all and(max-width:360px) {
-  .card {
-    background: #fffaed;
-    position: relative;
-    width: 150px;
-    height: 200px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    justify-content: center;
-  }
-  .cardss {
-    width: fit-content;
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .heading h1 {
-    font-size: 30px;
-    margin-top: -3%;
-    margin-bottom: 10px;
-  }
+  font-size: 15px;
+  text-decoration: none;
+  color: #0085ff;
+  margin-left: 1rem;
+  padding-bottom: 10%;
 }
