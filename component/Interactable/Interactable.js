@@ -1,13 +1,37 @@
 import styles from "./styles.module.css";
 import Tab from "./Tab";
 import dots from './dots_data'
+import React, { useEffect ,useState, useCallback , useRef,Fragment } from 'react';
+import useWebSocket, { ReadyState,useSocketIO } from 'react-use-websocket';
 
 const Interactable = () => {
+ 
+  const {
+    sendMessage,
+    lastMessage,
+    readyState
+  } = useWebSocket('ws://localhost:11000/', {
+    onOpen: () => console.log('opened'),
+    onError:(err)=>console.log('error when connecting',err),
+    //Will attempt to reconnect on all close events, such as server shutting down
+    shouldReconnect: (closeEvent) => true,
+  });
+ 
+  useEffect(()=>{
+    console.log("lastMessage",lastMessage);
+
+  },lastMessage);
+
+  const onDotClick=useCallback(() =>{
+    console.log("sending")
+  sendMessage("Hello")
+  }, []);
   return (
-    <>
+    <Fragment>
       <div className={styles.main_container}>
         <div className={styles.personalised_heading}>
           <h1>Get Personalised</h1>
+          <p>{readyState}</p>
         </div>
         <div className={styles.split}>
           <div className={styles.tab_container}>
@@ -16,7 +40,9 @@ const Interactable = () => {
 
           <div className={styles.img_container}>
           {dots.map(dot => {
-               return <div className = {styles.dots} key = {dot.id} style = {{top:`${dot.yPos}`,left:`${dot.xPos}`}}></div>
+               return <div className = {styles.dots} key = {dot.id} style = {{top:`${dot.yPos}`,left:`${dot.xPos}`}}
+               onClick={onDotClick}
+               ></div>
               
             })}
 			
@@ -28,7 +54,7 @@ const Interactable = () => {
           </div>
         </div>
       </div>
-    </>
+    </Fragment>
   );
 };
 
