@@ -1,5 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap"); */
 .heading {
   position: relative;
   text-align: center;
@@ -11,7 +9,6 @@
   font-size: 56px;
   line-height: 111.9%;
   font-weight: normal;
-  font-family: 'Roboto', sans-serif;
 }
 
 .cardss img {
@@ -25,6 +22,7 @@
   width: 100%;
   height: fit-content;
   display: inline-block;
+  margin: 2rem;
 }
 .cardss {
   width: fit-content;
@@ -41,25 +39,21 @@
   position: relative;
   width: 20rem;
   margin-top: 2%;
-  height: fit-content;
+  min-height: fit-content;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #fffbfb;
-  margin-left: 30%;
+  margin-left: 10%;
+  display: block;
+  margin: auto;
 }
 
 .cardp {
-  margin-left: 1rem;
+  margin-left: -2%;
   text-align: justify;
-  margin-right: 1rem;
-  font-family: 'Roboto', sans-serif;
+  margin-right: 20%;
+  font-family: Poppins;
   font-size: 12px;
-  line-height: 1rem;
-  letter-spacing: 0.8px;
-}
-.bheading {
-  margin-left: 2rem;
-  font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 583px) {
@@ -71,23 +65,9 @@
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 375px) {
   .card {
-    width: 40%;
-  }
-}
-
-@media (max-width: 360px) {
-  .card {
-    background: #fffaed;
     width: 80%;
-    margin-left: 15%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-  .cardss {
-    width: fit-content;
-    display: flex;
-    justify-content: space-between;
   }
   .heading {
     font-size: 32px;
@@ -108,22 +88,19 @@
 }
 
 .container h5 {
-  font-family: Poppins;
-  font-style: normal;
   font-weight: 500;
   font-size: 17px;
-  line-height: 25px;
-  margin-left: 1rem;
+  margin-left: -2%;
 }
 
 .container a {
   display: flex;
-  font-family: 'Roboto', sans-serif;
+  font-family: Poppins;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   text-decoration: none;
   color: #0085ff;
-  margin-left: 1rem;
-  padding-bottom: 10%;
+  /* padding-bottom: 2%; */
+  margin-left: -2%;
 }

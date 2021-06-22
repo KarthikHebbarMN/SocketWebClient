@@ -1,64 +1,58 @@
 .faq {
   position: relative;
-  width: 90%;
+  width: 100vw;
   height: fit-content;
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+  margin: 2rem;
 }
 .faqheading {
-  justify-content: center;
+  position: relative;
   text-align: center;
-  margin-top: 6em;
-  color: black;
-  display: flex;
-
-  font-family: "Roboto", sans-serif;
-
-}
-
-.listblock {
-  float: left;
-  margin-bottom: -2.9%;
-}
-
-.listitems {
-  border-radius: 5px;
-  color: white;
+  height: fit-content;
   justify-content: center;
-  text-align: center;
-  margin: 5px auto;
-  margin-left: 20px;
-  padding-top: 2px;
-  background-color: #333333;
-  width: 100%;
-  height: 50px;
-  padding-top: 20px;
-  list-style: none;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-
-  font-family: "Roboto", sans-serif;
-  letter-spacing: 1px;
-
 }
 
-.listblock1 {
-  float: right;
-}
-
-.arrow {
-  color: #ffffff;
-  text-align: right;
-  justify-content: center;
-  margin-left: 50px;
-}
-
-@media only screen and (max-width: 850px) {
-  .listitems {
-    font-size: 14px;
+@media (max-width: 320px) {
+  .faqheading {
+    margin-left: 15%;
   }
+}
+
+@media (max-width: 375px) {
+  .faqheading {
+    margin-left: 14%;
+  }
+}
+
+@media (max-width: 768px) {
+  .faqheading {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 425px) {
+  .faqheading {
+    margin-left: 10%;
+  }
+}
+
+.accord {
+  margin-bottom: 10px;
+}
+
+.list1 {
+  width: 30rem;
+  margin-right: 5%;
+  margin-bottom: 0.1%;
+
+  /* float: left;
+  margin-bottom: -2.9%; */
+}
+
+.list2 {
+  width: 30rem;
+  margin-right: 5%;
 }
