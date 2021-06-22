@@ -86,7 +86,7 @@
     margin-left: 0;
     border: .01rem solid black;
     display: flex;
-    
+     border-radius: 1rem;
     }
     .list:hover{
       border: .10rem solid black;
@@ -94,10 +94,12 @@
 
 .item_img{
    height: 100%;
-   width: 100%;   
+   width: 100%;  
+  background-image: cover;
+   border-radius: 1rem 0 0 1rem ;
 } 
 .product_img{
-  
+   border-radius: 1rem;
    width: 20%;
    background-image: cover;
  }
