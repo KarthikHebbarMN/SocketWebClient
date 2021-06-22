@@ -99,7 +99,7 @@
   }
 .product_details{ 
     width: 65%;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
   .product_details h3{
     margin: .5rem 0 0 0;  
@@ -113,7 +113,13 @@
     justify-content: center;
     align-items: center;
     align-content: center;  
+
   }
+  .product_star p{
+    font-size: .7rem;
+  }
+
+
   /* ---Tab.js css--- */
 .tab{
     display: flex; 

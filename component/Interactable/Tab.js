@@ -28,7 +28,9 @@ const Tab = () => {
                 <p>Price = {val.price1}</p>
               </div>
               <div className={styles.product_star}>
-                <StarBorderIcon />
+                <p>
+                  <StarBorderIcon />
+                </p>
               </div>
             </div>
             <div className={styles.list}>
@@ -55,7 +57,6 @@ const Tab = () => {
               </div>
               <div className={styles.product_star}>
                 <StarBorderIcon />
-                {/* <p>recommended</p> */}
               </div>
             </div>
           </div>
