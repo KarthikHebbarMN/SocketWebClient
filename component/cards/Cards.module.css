@@ -77,6 +77,10 @@
   .heading {
     font-size: 32px;
   }
+  .card {
+    width: 18rem;
+    margin: 5%;
+  }
 }
 
 @media (max-width: 850px) {
