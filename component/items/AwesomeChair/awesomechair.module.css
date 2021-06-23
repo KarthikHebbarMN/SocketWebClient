@@ -1,5 +1,5 @@
 .maindiv {
-  max-width: 95%;
+  max-width: 100%;
   max-height: max-content;
   border-radius: 15px;
 }
@@ -84,7 +84,6 @@
   position: absolute;
   left: 55%;
   top: 50%;
-
   background: #161616;
   border: none;
   outline: none;
@@ -145,7 +144,7 @@
     width: 22rem;
   }
   .container {
-    margin-left: 7%;
+    margin-left: 5%;
   }
   .awesome1 {
     top: 40%;
