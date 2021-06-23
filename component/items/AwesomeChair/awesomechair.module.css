@@ -14,7 +14,7 @@
 
 .box {
   margin-top: 5%;
-  width: 90%;
+  width: 100%;
   height: fit-content;
   display: flex;
   justify-content: center;
@@ -134,21 +134,24 @@
   }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 425px) {
+  .container {
+    margin-left: 4%;
+  }
+}
+
+@media (max-width: 405px) {
   .first {
-    width: 20rem;
-    height: fit-content;
+    width: 22rem;
   }
-  .first img {
-    width: 50%;
-    height: fit-content;
+  .container {
+    margin-left: 7%;
   }
-  .awesome {
-    top: 5%;
-    font-size: 18px;
+  .awesome1 {
+    top: 40%;
   }
   .awesomebtn {
     width: 4rem;
-    top: 60%;
+    top: 70%;
   }
 }
