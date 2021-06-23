@@ -1,41 +1,26 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styles from "../cards/Cards.module.css";
+import cardinfo from "./cardinfo";
 
-export const Cards = () => {
-  const cardinfo = [
-    {
-      image: "images/unsplash.jpg",
-      title: "Send Us Inspiration",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    },
-    {
-      image: "images/unsplash1.jpg",
-      title: "Send Us Inspiration",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    },
-    {
-      image: "images/unsplash2.jpg",
-      title: "Send Us Inspiration",
-      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    },
-  ];
-
-  const renderCard = (card, index) => {
-    return (
-      <div className={styles.cardss} key={index}>
-        <div className={styles.card}>
-          <img src={card.image} width="100%" alt="Avatar" />
-          <div className={styles.container}>
-            <h5 className={styles.bheading}>{card.title}</h5>
-            <p className={styles.cardp}>{card.text}</p>
-            <a href="#">Learn more</a>
+function Cards() {
+  return (
+    <Fragment>
+      <div className={styles.box}>
+        {cardinfo.map((card) => (
+          <div className={styles.cardss}>
+            <div key={card.id} className={styles.card}>
+              <img src={card.image} width="100%" alt="Avatar" />
+              <div className={styles.container}>
+                <h5 className={styles.bheading}>{card.title}</h5>
+                <p className={styles.cardp}>{card.text}</p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
           </div>
-        </div>
+        ))}
       </div>
-    );
-  };
-
-  return <>{cardinfo.map(renderCard)}</>;
-};
+    </Fragment>
+  );
+}
 
 export default Cards;
