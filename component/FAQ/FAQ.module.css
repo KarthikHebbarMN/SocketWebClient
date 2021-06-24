@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500;1,700&display=swap");
 .faq {
   position: relative;
-  width: 90%;
+  width: 100%;
   height: fit-content;
   background-color: white;
   display: flex;
@@ -29,7 +29,7 @@
 
 @media (max-width: 700px) {
   .faq {
-    margin-left: 10%;
+    margin-left: 9%;
   }
 }
 
@@ -41,7 +41,7 @@
 
 @media (max-width: 375px) {
   .faqheading {
-    margin-left: 14%;
+    margin-left: 12%;
   }
 }
 
