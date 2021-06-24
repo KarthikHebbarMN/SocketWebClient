@@ -50,13 +50,14 @@
 }
 
 .card {
-  width: 20rem;
+  width: 18rem;
   margin-top: 2%;
-  min-height: fit-content;
+  height: fit-content;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: #fffbfb;
-  margin-left: 8%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .cardp {
@@ -75,11 +76,13 @@
 
 @media (max-width: 375px) {
   .heading {
-    font-size: 32px;
+    font-size: 30px;
+    margin-left: 17.2%;
   }
   .card {
     width: 18rem;
-    margin: 5%;
+    margin: 3%;
+    margin-left: 8%;
   }
 }
 

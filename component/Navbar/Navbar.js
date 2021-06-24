@@ -23,6 +23,12 @@ export const Navbar = () => {
   return (
     <>
       <div className={styles.Navbar}>
+        <style jsx global>{`
+          body {
+            margin: 0;
+            font-family: "Roboto", sans-serif;
+          }
+        `}</style>
         <a href="" className={styles.Navicon}>
           <img src="images/Frame3631.png" />
         </a>

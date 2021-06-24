@@ -13,8 +13,8 @@ function Footer() {
           </p>
 
           <div className={styles.row}>
-            {Footerdata.map((val) => (
-              <div className={styles.footercol}>
+            {Footerdata.map((val, index) => (
+              <div className={styles.footercol} key={index}>
                 <ul>
                   <h4 className={styles.footerhead}>{val.heading}</h4>
 

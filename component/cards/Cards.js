@@ -6,8 +6,8 @@ function Cards() {
   return (
     <Fragment>
       <div className={styles.box}>
-        {cardinfo.map((card) => (
-          <div className={styles.cardss}>
+        {cardinfo.map((card, index) => (
+          <div className={styles.cardss} key={index}>
             <div key={card.id} className={styles.card}>
               <img src={card.image} width="100%" alt="Avatar" />
               <div className={styles.container}>

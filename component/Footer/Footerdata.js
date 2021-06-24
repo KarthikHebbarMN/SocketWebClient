@@ -21,6 +21,7 @@ const Footerdata = [
     subheading1: "catalog",
     subheading2: "Popular",
     subheading3: "Features",
+    subheading4: "F.A.Q",
   },
 ];
 
