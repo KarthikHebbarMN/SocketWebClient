@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import styles from "./styles.module.css";
 import { makeStyles } from "@material-ui/core/styles";
 import Stepper from "@material-ui/core/Stepper";
@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     marginTop: theme.spacing(1),
     marginRight: theme.spacing(1),
-    backgroundColor: "#343A40",
+    backgroundColor: "#293B5F",
     color: "#fff",
     fontFamily : "Roboto"
   },
@@ -59,6 +59,7 @@ function getStepContent(step) {
 
 export default function Progress() {
   const classes = useStyles();
+  const [resetStep, setResetStep] = useState('Get your Interior done!')
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
 
@@ -88,7 +89,7 @@ export default function Progress() {
             labelProps.icon = (
               <div
                 style={{
-                  backgroundColor: "#343A40",
+                  backgroundColor: "#293B5F",
                   color: "#fff",
                   borderRadius: "50%",
                   height: "35px",
@@ -119,7 +120,7 @@ export default function Progress() {
                         variant="contained"
                         color="primary"
                         onClick={handleNext}
-                        style={{ backgroundColor: "#343A40" }}
+                        style={{ backgroundColor: "#293B5F" }}
                         className={classes.button}
                       >
                         {activeStep === steps.length - 1 ? "Finish" : "Next"}
@@ -133,11 +134,11 @@ export default function Progress() {
         </Stepper>
         {activeStep === steps.length && (
           <Paper square elevation={0} className={classes.resetContainer}>
-            <Typography>All steps completed - you&apos;re finished</Typography>
+            <Typography>{resetStep}</Typography>
             <Button
               onClick={handleReset}
               className={classes.button}
-              style={{ backgroundColor: "#343A40" }}
+              style={{ backgroundColor: "#4A1C40", width : '250px' }}
             >
               Reset
             </Button>
