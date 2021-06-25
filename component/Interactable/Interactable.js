@@ -34,7 +34,7 @@ useEffect(()=>{
     sendMessage,
     lastMessage,
     readyState
-  } = useWebSocket('ws://20.204.17.85:6750/', {
+  } = useWebSocket('wss://20.204.17.85:6750/', {
     onOpen: () => onConnected(),
     onError:(err)=>console.log('error when connecting',err),
     onMessage:(resp) => onMessageReceived(resp),
