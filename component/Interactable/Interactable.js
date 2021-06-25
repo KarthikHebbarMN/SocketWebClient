@@ -3,7 +3,7 @@ import Tab from "./Tab";
 import React, { useMemo ,useState, useCallback , useRef,Fragment } from 'react';
 import useWebSocket, { ReadyState,useSocketIO } from 'react-use-websocket';
 import { v4 as uuidv4 } from 'uuid';
-import {clientOnlineMessage,updateImageResponse} from "../../Models"
+import {clientOnlineMessage,updateImageResponse, updateSceneRequest} from "../../Models"
 import {messageType} from "../../Models/constants"
 import { useEffect } from "react";
 const uuid = uuidv4();
@@ -17,7 +17,8 @@ const Interactable = () => {
 //#region  states
 const [imgSrc,setImgSrc] = useState("")
 const [dots,setDotsData] = useState([]);
-
+const [categories,setCategories] = useState([]);
+const [products,setProducts] = useState([]);
 //#endregion
 useEffect(()=>{
   window.addEventListener('resize',windowResized);
@@ -33,7 +34,7 @@ useEffect(()=>{
     sendMessage,
     lastMessage,
     readyState
-  } = useWebSocket('ws://127.0.0.1:6750/', {
+  } = useWebSocket('ws://20.204.17.85:6750/', {
     onOpen: () => onConnected(),
     onError:(err)=>console.log('error when connecting',err),
     onMessage:(resp) => onMessageReceived(resp),
@@ -45,7 +46,7 @@ useEffect(()=>{
   messageHistory.current = useMemo(() =>
   messageHistory.current.concat(lastMessage),[lastMessage]);
 
-
+// On Server Connected to SOscket . Send a Client Online Message
  const onConnected =()=> {
   console.log('opened')
   let msg = {...clientOnlineMessage}
@@ -74,9 +75,15 @@ useEffect(()=>{
 
  //#endregion
   
-const onDotClick=useCallback((category) =>{
+const onDotClick=useCallback((category,prodId) =>{
     console.log("clicked on",category)
- 
+  let swapProdREquest= {...updateSceneRequest};
+  let swappedProducts= [{Id:"",ProductId:"blueBars"}]
+  swapProdREquest.guid = uuid;
+  swapProdREquest.swappedProducts = swappedProducts;
+  console.log("Sending Mesage",swapProdREquest);
+  sendMessage(JSON.stringify (swapProdREquest));
+
   }, []);
 
 //#region Image and dots ReMapping
@@ -128,7 +135,7 @@ const processRenderResponse=(renderResponse)=>{
           <div className={styles.img_container} id="imageHolder">
           {dots.map((dot,index) => {
                return <div className = {styles.dots} key = {index} style = {{top:`${dot.position.y - 3}%`,left:`${dot.position.x - 3}%`}}
-               onClick={()=>onDotClick(dot.categoryType)}
+               onClick={()=>onDotClick(dot.categoryType,dot.productId)}
                ><p>{dot.categoryType}</p>
                </div>
               

@@ -1,11 +1,14 @@
 import React, { Fragment } from "react";
+import Image from 'next/image'
 import Meta from "../seo/Meta";
 import styles from "./HomePage.module.css";
 const HomePage = () => {
   return (
     <Fragment>
+
       <div className={styles.header}>
         <div className={styles.container}>
+     
           <div className={styles.text_box}>
             <h1>
               Refine the tone
