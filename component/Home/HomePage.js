@@ -1,8 +1,15 @@
-import React, { Fragment } from "react";
+import React, { Fragment,useEffect } from "react";
 import Image from 'next/image'
 import Meta from "../seo/Meta";
 import styles from "./HomePage.module.css";
+import axios from 'axios';
+
 const HomePage = () => {
+useEffect(async()=>{
+  console.log("Fetch form End pont");
+  let resp = await axios.get("http://20.197.30.199:80/api/v1/landing/landing");
+  console.log(resp);
+},[]);
   return (
     <Fragment>
 
