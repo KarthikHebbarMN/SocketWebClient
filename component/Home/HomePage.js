@@ -1,11 +1,21 @@
-import React, { Fragment } from "react";
+import React, { Fragment,useEffect } from "react";
+import Image from 'next/image'
 import Meta from "../seo/Meta";
 import styles from "./HomePage.module.css";
+import axios from 'axios';
+
 const HomePage = () => {
+useEffect(async()=>{
+  console.log("Fetch form End pont");
+  let resp = await axios.get("http://35.154.229.151:4000/rest/api/v1/landing/faq");
+  console.log(resp);
+},[]);
   return (
     <Fragment>
+
       <div className={styles.header}>
         <div className={styles.container}>
+     
           <div className={styles.text_box}>
             <h1>
               Refine the tone
