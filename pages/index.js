@@ -12,13 +12,6 @@ import Interactable from "../component/Interactable/Interactable";
 import HomePage from "../component/Home/HomePage";
 import DynamicCard from "../component/cards/DynamicCard";
 
-export async function getStaticProps(context) {
-  console.log("Test asyncSidePrope")
-
-  return {
-    props: {}, // will be passed to the page component as props
-  }
-}
 export const Home = () => {
   return (
     <Fragment>

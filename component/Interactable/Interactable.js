@@ -34,9 +34,9 @@ useEffect(()=>{
     sendMessage,
     lastMessage,
     readyState
-  } = useWebSocket('wss://127.0.0.1:443/', {
+  } = useWebSocket('wss://35.154.229.151:443/socket', {
     onOpen: () => onConnected(),
-    onError:(err)=>console.log('error when connecting',err),
+    onError:(err,dat)=>console.log('error when connecting',err,dat),
     onMessage:(resp) => onMessageReceived(resp),
     //Will attempt to reconnect on all close events, such as server shutting down
     shouldReconnect: (closeEvent) => true,
