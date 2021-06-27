@@ -7,7 +7,7 @@ import axios from 'axios';
 const HomePage = () => {
 useEffect(async()=>{
   console.log("Fetch form End pont");
-  let resp = await axios.get("https://35.154.229.151:443/rest/api/v1/landing/landing");
+  let resp = await axios.get("http://35.154.229.151:4000/rest/api/v1/landing/faq");
   console.log(resp);
 },[]);
   return (
