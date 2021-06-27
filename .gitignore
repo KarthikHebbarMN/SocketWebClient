@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-
+.vscode
 .next
 
 # testing
@@ -26,4 +26,4 @@ yarn-error.log*
 
 *.lock
 
-*-lock.json
+package-lock.json
