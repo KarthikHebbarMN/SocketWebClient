@@ -10,7 +10,7 @@ const Tab = () => {
   const toggleTab = (index) => {
     setToggleState(index);
   };
-
+  // --------tab title---------
   const tabMain = tab_data.map((val) => (
     <Fragment>
       <div className={styles.tab_container}>
@@ -26,6 +26,7 @@ const Tab = () => {
       </div>
     </Fragment>
   ));
+  // -------tab body---------
   const tabContent = tab_data.map((val) => (
     <Fragment>
       <div className={styles.content_tab}>
