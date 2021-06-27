@@ -144,7 +144,7 @@ const processRenderResponse=(renderResponse)=>{
 
             <img
               className={styles.personalised_img}
-              src={imgSrc} alt="Interactable Image for your demo"
+              src={imgSrc} alt="Interactable for your demo"
               ></img>
           </div>
         </div>

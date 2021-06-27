@@ -5,7 +5,7 @@ import Navbar from "../component/Navbar/Navbar";
 
 import FAQ from "../component/FAQ/FAQ";
 import Footer from "../component/Footer/Footer";
-import Progress from "../component/NewUserFlow";
+import Progress from "../component/UserFlow";
 import Interactable from "../component/Interactable/Interactable";
 
 import HomePage from "../component/Home/HomePage";
