@@ -16,6 +16,7 @@ let imageContainerHeight =0;
 let rendererScreenDimension= {x:0,y:0}
 
 const Interactable = () => {
+  console.log("Loaded Interactable")
 //#region  states
 const [imgSrc,setImgSrc] = useState("")
 const [dots,setDotsData] = useState([]);
@@ -36,7 +37,7 @@ useEffect(()=>{
     sendMessage,
     lastMessage,
     readyState
-  } = useWebSocket('ws://35.154.229.151:4000/socket/', {
+  } = useWebSocket('ws://35.154.229.151:6750', {
     onOpen: () => onConnected(),
     onError:(err,dat)=>console.log('error when connecting',err,dat),
     onMessage:(resp) => onMessageReceived(resp),
