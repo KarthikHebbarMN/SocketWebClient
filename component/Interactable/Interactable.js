@@ -13,6 +13,7 @@ let imageContainerWidth = 0;
 let imageContainerHeight =0;
 let rendererScreenDimension= {x:0,y:0}
 const uuid = uuidv4();
+const ws =new W3CWebSocket ('ws://35.154.229.151:6750');
 
 
 const Interactable = () => {
@@ -24,7 +25,7 @@ const [categories,setCategories] = useState([]);
 const [products,setProducts] = useState([]);
 //#endregion
 
-const ws =new W3CWebSocket ('ws://35.154.229.151:6750');
+
 ws.onerror = function(evt) {
   console.log('Connection Error',evt);
 };

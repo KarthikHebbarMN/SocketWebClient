@@ -13,14 +13,10 @@ const Interactable = dynamic(()=> import("../component/Interactable/Interactable
 export const Home = () => {
   return (
     <Fragment>
-      <Navbar />
-      <HomePage />
-      <DynamicCard />
-      <Ecommerce />
+    
       <Interactable />
       <Progress />
-      <FAQ />
-      <Footer />
+     
     </Fragment>
   );
 };
