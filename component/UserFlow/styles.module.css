@@ -12,11 +12,14 @@
 .root {
     width : 50%;
     height : 60vh;
-    padding : 100px 35px 35px 70px;
+    padding : 70px 35px 35px 250px;
 }
 
 .para {
     padding-bottom: 5px;
+}
+.title {
+    font-size: 1.4rem;
 }
 
 .image {
@@ -44,14 +47,15 @@
      .container {
          flex-flow: wrap;
      }
-     .root {
-         height: auto;
-         width : 100%
-     }
+  
     .image {
         padding-right: 150px;
     }
-     
+    .root {
+        height: auto;
+        width  : 100%;
+        padding : 30px 150px 50px 130px
+    }
  }
  
  
@@ -62,9 +66,10 @@
          margin-top : 80px;
      }
      .root {
-         width : 100%;
-         padding-left: 20px;
+         width: 100%;
+         padding-left: 80px;
          padding-top: 30px;
+         
      }
      .container {
          margin-left : 25px;
