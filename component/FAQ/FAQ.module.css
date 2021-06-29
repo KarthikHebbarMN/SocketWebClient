@@ -1,60 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500;1,700&display=swap");
 .faq {
-  position: relative;
   width: 100%;
   height: fit-content;
   background-color: white;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 2rem auto;
-  font-family: "Roboto", sans-serif;
   transition: all 0.3s ease;
 }
 .faqheading {
-  width: 90%;
-  margin-left: 2%;
+  width: 100%;
   position: relative;
   text-align: center;
   height: fit-content;
   justify-content: center;
   font-family: "Roboto", sans-serif;
-}
-
-@media (max-width: 450px) {
-  .faq {
-    margin-left: 15%;
-  }
-}
-
-@media (max-width: 700px) {
-  .faq {
-    margin-left: 9%;
-  }
-}
-
-@media (max-width: 320px) {
-  .faqheading {
-    margin-left: 15%;
-  }
-}
-
-@media (max-width: 375px) {
-  .faqheading {
-    margin-left: 12%;
-  }
-}
-
-@media (max-width: 768px) {
-  .faqheading {
-    margin-left: 5%;
-  }
-}
-
-@media (max-width: 425px) {
-  .faqheading {
-    margin-left: 10%;
-  }
 }
 
 .accord {
@@ -63,14 +22,5 @@
 
 .list1 {
   width: 30rem;
-  margin-right: 5%;
   margin-bottom: 0.1%;
-
-  /* float: left;
-  margin-bottom: -2.9%; */
-}
-
-.list2 {
-  width: 30rem;
-  margin-right: 5%;
 }
