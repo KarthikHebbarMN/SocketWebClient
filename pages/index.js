@@ -8,7 +8,7 @@ import Footer from "../component/Footer/Footer";
 import Progress from "../component/UserFlow";
 import HomePage from "../component/Home/HomePage";
 import DynamicCard from "../component/cards/DynamicCard";
-
+//import Interactable from "../component/Interactable/Interactable";
 const Interactable = dynamic(()=> import("../component/Interactable/Interactable"));
 export const Home = () => {
   return (

@@ -1,54 +1,54 @@
-import { useEffect } from "react";
-import React, { useMemo ,useState, useCallback , useRef,Fragment } from 'react';
-import useWebSocket, { ReadyState,useSocketIO } from 'react-use-websocket';
+import React, { useEffect ,useState, useCallback , useRef,Fragment } from 'react';
 import styles from "./styles.module.css";
 import Tab from "./Tab";
-
 import { v4 as uuidv4 } from 'uuid';
 import {clientOnlineMessage,updateImageResponse, updateSceneRequest} from "../../Models"
 import {messageType} from "../../Models/constants"
+var W3CWebSocket = require('websocket').w3cwebsocket;
 
-const uuid = uuidv4();
+
 
 
 let imageContainerWidth = 0;
 let imageContainerHeight =0;
 let rendererScreenDimension= {x:0,y:0}
+const uuid = uuidv4();
+
 
 const Interactable = () => {
-  console.log("Loaded Interactable")
+  console.log("Loaded Interactable Component. With Socket inside the component")
 //#region  states
 const [imgSrc,setImgSrc] = useState("")
 const [dots,setDotsData] = useState([]);
 const [categories,setCategories] = useState([]);
 const [products,setProducts] = useState([]);
 //#endregion
-useEffect(()=>{
-  window.addEventListener('resize',windowResized);
-  windowResized();
-  console.log("Imge width",imageContainerWidth );
-},[]);
 
-
+const ws =new W3CWebSocket ('ws://35.154.229.151:6750');
+ws.onerror = function(evt) {
+  console.log('Connection Error',evt);
+};
   //#region Socket Set up
+  const sendMessage=(data)=>{
+    ws.send(data);
+  }
+  ws.onopen = () => {
+    // on connecting, do nothing but log it to the console
+    onConnected();
+    console.log('connected')
+    }
+    ws.onmessage = evt => {
+      // listen to data sent from the websocket server
+      console.log("Got event from WebSocket",evt)
+      const message = JSON.parse(evt.data)
+      onMessageReceived(message);
+      }
 
-  const messageHistory = useRef([]);
-  const {
-    sendMessage,
-    lastMessage,
-    readyState
-  } = useWebSocket('ws://35.154.229.151:6750', {
-    onOpen: () => onConnected(),
-    onError:(err,dat)=>console.log('error when connecting',err,dat),
-    onMessage:(resp) => onMessageReceived(resp),
-    //Will attempt to reconnect on all close events, such as server shutting down
-    shouldReconnect: (closeEvent) => true,
-  });
+  ws.onclose = (event) => {
+    console.log('disconnected',event)
+    // automatically try to reconnect on connection loss
 
-
-  messageHistory.current = useMemo(() =>
-  messageHistory.current.concat(lastMessage),[lastMessage]);
-
+    }
 // On Server Connected to SOscket . Send a Client Online Message
  const onConnected =()=> {
   console.log('opened')
@@ -60,7 +60,7 @@ useEffect(()=>{
 
  const onMessageReceived =(response)=> {
    console.log("IS client handle: Received message",response);
-  let msg = JSON.parse(response.data);
+  let msg = response;
   const msgType = msg?.messageType;
 
   if(msgType !== undefined){
@@ -128,7 +128,7 @@ const processRenderResponse=(renderResponse)=>{
       <div className={styles.main_container}>
         <div className={styles.personalised_heading}>
           <h1>Get Personalised</h1>
-          <p>{readyState}</p>
+      
         </div>
         <div className={styles.split}>
           <div className={styles.tab_container}>
