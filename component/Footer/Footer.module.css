@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500;1,700&display=swap");
 .footer {
   width: 100%;
   height: fit-content;
   background-color: black;
   padding-bottom: 3%;
+  overflow: auto;
 }
 
 .container {
@@ -29,7 +29,6 @@
   font-size: 18px;
   color: #ffffff;
   margin-bottom: 35px;
-  font-family: "Roboto", sans-serif;
 }
 
 .listitems {
@@ -46,7 +45,6 @@
   color: #bbbbbb;
   display: block;
   transition: all 0.3s ease;
-  font-family: "Roboto", sans-serif;
 }
 
 .pname {
@@ -55,14 +53,6 @@
   margin-left: 5%;
   padding-top: 5%;
   font-size: 18px;
-  font-family: "Roboto", sans-serif;
-}
-
-@media (max-width: 700px) {
-  .footer2 {
-    width: 113%;
-    overflow: hidden;
-  }
 }
 
 @media (max-width: 850px) {

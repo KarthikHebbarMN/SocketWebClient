@@ -2,6 +2,8 @@
 .container {
   min-height: 100vh;
   width: 94%;
+  background-image: url("https://larcel-image-storage.s3.ap-south-1.amazonaws.com/BlackMarble_Wall_.jpg");
+  background-image: url("/images/home.png") no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 3%;
@@ -68,14 +70,24 @@
   }
 }
 
-.container {
-  min-height: 100vh;
-  width: 95%;
-  background-image: url("https://larcel-image-storage.s3.ap-south-1.amazonaws.com/BlackMarble_Wall_.jpg");
-  background-position: center;
-  background-size: cover;
-  border-radius: 3%;
-  margin: 2rem;
+.container{
+
+    min-height: 100vh;
+    width: 94%;
+    background-image: url("https://larcel-image-storage.s3.ap-south-1.amazonaws.com/BlackMarble_Wall_.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 3%;
+    margin: 2rem;
+}
+.text_box{
+    width: 70%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 40%;
+    left: 13%; 
+    transition: translate(-50%, -50%);
+    text-align: left;
 }
 .text_box {
   width: 70%;
@@ -90,18 +102,28 @@
   font-size: 3rem;
   font-weight: bold;
 }
-@media (max-width: 480px) {
-  .text_box {
-    width: 80%;
-    top: 30%;
-    left: 20%;
+@media(max-width: 480px){
+  .text_box h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+    .text_box{
+        width: 80%;
+        top: 30%;
+        left: 20%; 
+    }
+    .container{
+
+      height: 120vh;
+      width: 93%;  
+      margin: 1rem;
   }
 }
-@media (max-width: 700px) {
-  .container {
-    display: inline-block;
-  }
-  .text_box h1 {
+@media(max-width: 700px){
+    .container{
+        display: inline-block;
+    }
+.text_box h1{
     font-size: 2rem;
     font-weight: bold;
   }
@@ -144,9 +166,22 @@
   font-size: 0.9rem;
 }
 
-.btn:hover {
-  /* background: #444444; 
-    background: #343A40; */
+  .btn {
+    position: relative;
+    border-radius: 5px;
+    background: #161616; 
+    border: none;
+    outline: none;
+    width: 110px;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    }
+
+  .btn:hover{
+  
   background: #000000;
   transform: scale(1.01);
 }
