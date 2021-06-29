@@ -1,6 +1,6 @@
-import React, { Fragment,useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import styles from "./styles.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 // import tab_data from "./tab_data";
 import StarBorderIcon from "@material-ui/icons/StarBorder";
 import axios from "axios";
