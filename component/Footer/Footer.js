@@ -1,68 +1,46 @@
-import React from "react";
+import React, { Fragment } from "react";
 import styles from "../Footer/Footer.module.css";
+import Footerdata from "./Footerdata";
 
-export const Footer = () => {
+function Footer() {
   return (
-    <>
-      <div className={styles.footerr}>
-        <footer className={styles.footer}>
-          <div className={styles.container}>
-            <p className={styles.pname}>
-              Working with wireframes may be a<br /> architecture to the visual
-              design.
-            </p>
-            <div className={styles.row}>
-              <div className={styles.footercol}>
+    <Fragment>
+      <div className={styles.footer}>
+        <div className={styles.container}>
+          <p className={styles.pname}>
+            Working with wireframes may be a<br /> architecture to the visual
+            design.
+          </p>
+
+          <div className={styles.row}>
+            {Footerdata.map((val, index) => (
+              <div className={styles.footercol} key={index}>
                 <ul>
-                  <h4 className={styles.footerhead}>Store</h4>
+                  <h4 className={styles.footerhead}>{val.heading}</h4>
+
                   <li className={styles.listitems}>
-                    <a href="#">Catalog</a>
+                    <a href="#">{val.subheading1}</a>
                   </li>
+
                   <li className={styles.listitems}>
-                    <a href="#">Popular</a>
+                    <a href="#">{val.subheading2}</a>
                   </li>
+
                   <li className={styles.listitems}>
-                    <a href="#">Features</a>
+                    <a href="#">{val.subheading3}</a>
                   </li>
+
                   <li className={styles.listitems}>
-                    <a href="#">FAQ</a>
+                    <a href="#">{val.subheading4}</a>
                   </li>
                 </ul>
               </div>
-              <div className={styles.footercol}>
-                <ul>
-                  <h4 className={styles.footerhead}>About</h4>
-                  <li className={styles.listitems}>
-                    <a href="#">Catalog</a>
-                  </li>
-                  <li className={styles.listitems}>
-                    <a href="#">popular</a>
-                  </li>
-                  <li className={styles.listitems}>
-                    <a href="#">Features</a>
-                  </li>
-                </ul>
-              </div>
-              <div className={styles.footercol}>
-                <ul>
-                  <h4 className={styles.footerhead}>Catalog</h4>
-                  <li className={styles.listitems}>
-                    <a href="#">Catalog</a>
-                  </li>
-                  <li className={styles.listitems}>
-                    <a href="#">Popular</a>
-                  </li>
-                  <li className={styles.listitems}>
-                    <a href="#">Features</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
-        </footer>
+        </div>
       </div>
-    </>
+    </Fragment>
   );
-};
+}
 
 export default Footer;

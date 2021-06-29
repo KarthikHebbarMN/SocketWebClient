@@ -1,13 +1,16 @@
-.footerr {
-  /* position: relative; */
-  max-height: fit-content;
-  max-width: 100%;
-}
-.container {
-  position: relative;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500;1,700&display=swap");
+.footer {
   width: 100%;
-  max-height: fit-content;
+  height: fit-content;
+  background-color: black;
+  padding-bottom: 3%;
 }
+
+.container {
+  width: 100%;
+  justify-items: auto;
+}
+
 .row {
   justify-content: space-evenly;
   display: flex;
@@ -18,32 +21,24 @@
 .ul {
   list-style: none;
 }
-.footer {
-  display: flex;
 
-  background-color: black;
-  padding: 50px 0;
-}
 .footercol {
   display: flex;
 }
 .footercol h4 {
-  font-size: 16px;
+  font-size: 18px;
   color: #ffffff;
   margin-bottom: 35px;
-  font-weight: 300;
   font-family: "Roboto", sans-serif;
-  /* position: relative; */
 }
 
 .listitems {
   list-style: none;
-  /* margin-right: 3%; */
   padding-top: 5%;
 }
 
 .footercol ul li a {
-  font-size: 17px;
+  font-size: 20px;
   text-transform: capitalize;
   color: #ffffff;
   text-decoration: none;
@@ -58,12 +53,19 @@
   color: white;
   position: relative;
   margin-left: 5%;
+  padding-top: 5%;
+  font-size: 18px;
   font-family: "Roboto", sans-serif;
-  letter-spacing: 1px;
-  font-size: 16px;
 }
 
-@media only screen and (max-width: 850px) {
+@media (max-width: 700px) {
+  .footer2 {
+    width: 113%;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 850px) {
   .row {
     justify-content: space-evenly;
     display: flex;
@@ -76,4 +78,3 @@
     font-size: 15px;
   }
 }
-

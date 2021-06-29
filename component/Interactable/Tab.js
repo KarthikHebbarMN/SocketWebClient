@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment,useEffect } from "react";
 import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
 // import tab_data from "./tab_data";
