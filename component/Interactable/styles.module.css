@@ -9,7 +9,7 @@
 }
 .tab_container{
  padding: 2vmin;
- width: 100%;
+ width: 99%;
 }
 .img_container{
  position: relative;
@@ -25,7 +25,7 @@
   margin: 0;
 }
 .personalised_img{
- width: 100%;
+ width: 99%;
  height: 100%;
  border: .6rem solid rgb(227, 230, 230);
 }
@@ -136,12 +136,13 @@
 .tab_container {
 
       display: block;
-      margin-right: 1.5rem;
+      /* margin-right: 1.5rem; */
     }
 @media(min-width: 700px){
   .tab_container {
     display: block;
     margin-right: .5rem;
+    
   }
 }
 
